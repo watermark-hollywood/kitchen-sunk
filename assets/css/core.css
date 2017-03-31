@@ -132,12 +132,11 @@ a:focus {
 
 /* Page titles */
 .page-title {
-  font-size: 32px;
-  font-weight: 600;
-  color: #5D9732;
-  margin-bottom: 0px;
-  margin-top: 0px;
-  line-height: 40px;
+  color: #5C5C5C;
+  font-family: 'Nunito', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 36px;
 }
 
 .page-subtitle {
@@ -770,8 +769,8 @@ textarea.form-control {
 .pagination > .active > span:hover,
 .pagination > .active > a:focus,
 .pagination > .active > span:focus {
-  background-color: #71b6f9;
-  border-color: #71b6f9;
+  background-color: #5d9732;
+  border-color: #5d9732;
 }
 .pager li > a,
 .pager li > span {
