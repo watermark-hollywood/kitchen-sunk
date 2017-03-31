@@ -1,0 +1,31 @@
+.dt-buttons {
+	display: none;
+}
+
+div.dataTables_filter {
+	text-align: right;
+}
+
+th {
+	border: none;
+	font-family: "Nunito", sans-serif;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 8px;
+}
+
+tr td {
+		color: #5C5C5C;	
+		font-family: "Avenir", sans-serif;	
+		font-size: 10px;	
+		font-weight: 300;	
+		line-height: 11px;
+}
+
+tr td:first-child {
+		color: #5D9732;	
+		font-family: "Nunito", sans-serif;	
+		font-size: 12px;	
+		font-weight: 700;	
+		line-height: 15px;
+}

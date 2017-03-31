@@ -1053,7 +1053,7 @@
 .table > thead > tr.active > th,
 .table > tbody > tr.active > th,
 .table > tfoot > tr.active > th {
-  background-color: #f7f9f1 !important;
+  background-color: #f7f7f7 !important;
 }
 .table > thead > tr > th,
 .table > tbody > tr > th,
