@@ -1,5 +1,5 @@
 /* Chili's overrides for KitchenSync Styles */
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,500,700|Roboto:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,500,700|Roboto:300,400,700');
 
 body {
 	font-family: 'Roboto', sans-serif;
@@ -16,12 +16,42 @@ body {
 	margin-right: 15px;
 }
 
-.page-title {
+.page-title, .large-metric {
 	color: #5C5C5C;
 	font-family: 'Nunito', sans-serif;
 	font-size: 30px;
 	font-weight: bold;
 	line-height: 36px;
+}
+
+.page-subtitle {
+	color: #979797;	
+	font-family: "Nunito", sans-serif;	
+	font-weight: 300;
+	font-size: 24px;	
+	line-height: 33px;
+}
+
+.job-title, .report-title {
+	color: #5c5c5c;
+	font-family: "Nunito", sans-serif;	
+	font-size: 8px;	
+	font-weight: 500;	
+	line-height: 12px;	
+	text-transform: uppercase;
+}
+
+.job-title {
+	text-align: right;
+}
+
+.employee-name {
+	color: #5D9732;	
+	font-family: "Nunito", sans-serif;	
+	font-size: 18px;	
+	line-height: 26px;	
+	text-align: right;
+	font-weight: 300;
 }
 
 .section-title {
@@ -34,7 +64,7 @@ body {
 }
 
 .panel-title {
-	color: #5D9732;
+	color: #5C5C5C;
 	font-family: 'Nunito', sans-serif;
 	font-size: 16px;
 	font-weight: bold;
@@ -66,6 +96,7 @@ body {
 	text-transform: uppercase;
 	box-shadow: 0 3px 0 0 #537A36;
 	overflow: hidden;
+	width: 100%;
 }
 
 .btn-red {
@@ -82,6 +113,7 @@ body {
 	text-transform: uppercase;
 	box-shadow: 0 3px 0 0 #A72019;
 	overflow: hidden;
+	width: 100%;
 }
 
 .btn-white {
@@ -99,6 +131,7 @@ body {
 	text-transform: uppercase;
 	box-shadow: 0 3px 0 0 #d6d6d6;
 	overflow: hidden;
+	width: 100%;
 }
 
 /* Margin and Padding classes (bootstrap 4 emulating) */
@@ -168,6 +201,12 @@ body {
 	  .seven-cols .col-lg-1  {
 	    padding-left: 15px;
 	    padding-right: 15px;
+	}
+	.job-title {
+		text-align: left;
+	}
+	.employee-name{
+		text-align: left;
 	}
 }
 

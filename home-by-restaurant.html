@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Brinker KitchenSYNC is the ultimate Culinary Management system used by Chilis Restaurants">
+        <meta name="author" content="Watermark Digital">
+
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <title>KitchenSYNC - Brinker Restaurant Management System</title>
+
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/core.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/components.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/pages.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/menu.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/chilis.css" rel="stylesheet" type="text/css" />
+
+        <!-- HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="assets/js/modernizr.min.js"></script>
+
+    </head>
+
+
+    <body>
+
+        <!-- BEGIN Navigation Bar-->
+        <header id="topnav">
+
+			<!-- Top Bar and Navigation -->
+			            <div class="topbar-main">
+                <div class="container">
+
+                    <!-- LOGO -->
+                    <div class="topbar-left">
+                    	
+                        <a href="#" class="logo">
+                        	<img src="assets/images/ks_logo.png">	
+                        </a>
+                    </div>
+                    <!-- End Logo container-->
+
+
+                    <div class="menu-extras">
+
+                        <ul class="nav navbar-nav navbar-right pull-right">
+                            <li>
+                                <!-- Notification -->
+                                <div class="notification-box">
+                                    <ul class="list-inline m-b-0">
+                                        <li>
+                                            <a href="javascript:void(0);" class="right-bar-toggle">
+                                                <i class="zmdi zmdi-notifications-none"></i>
+                                            </a>
+                                            <div class="noti-dot">
+                                                <span class="dot"></span>
+                                                <span class="pulse"></span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- End Notification bar -->
+                            </li>
+
+                            <li class="dropdown user-box">
+                                <a href="#" class="dropdown-toggle waves-effect waves-light profile " data-toggle="dropdown" aria-expanded="true">
+                                    <img src="assets/images/avatar_kasey.jpg" alt="user-img" class="img-circle user-img">
+                                    <div class="user-status away"><i class="zmdi zmdi-dot-circle"></i></div>
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <li><a href="javascript:void(0)"><i class="ti-user m-r-5"></i> Profile</a></li>
+                                    <li><a href="javascript:void(0)"><i class="ti-settings m-r-5"></i> Settings</a></li>                                    
+                                    <li><a href="javascript:void(0)"><i class="ti-power-off m-r-5"></i> Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="menu-item">
+                            <!-- Mobile menu toggle-->
+                            <a class="navbar-toggle">
+                                <div class="lines">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </a>
+                            <!-- End mobile menu toggle-->
+                        </div>
+                    </div>
+
+                </div>
+            </div>            <div class="navbar-custom">
+                <div class="container">
+                    <div id="navigation">
+                        <!-- Navigation Menu-->
+                        <ul class="navigation-menu">
+
+                            <li class="has-submenu">
+                                <a href="#"><i class="zmdi zmdi-home"></i> <span> Home </span> </a>
+                                <ul class="submenu megamenu">
+                                    <li>
+                                        <ul>
+                                            <li><a href="#">Announcements</a></li>
+                                            <li><a href="#">Calendar</a></li>
+                                            <li><a href="#">Tasks</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="has-submenu">
+                                <a href="#"><i class="zmdi zmdi-collection-text"></i><span> Menu </span> </a>
+                                <ul class="submenu">
+                                    <li><a href="#">Menu Recipes</a></li>
+                                    <li><a href="#">Prep Items</a></li>
+                                    <li><a href="#">Ingredients</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="has-submenu">
+                                <a href="#"><i class="zmdi zmdi-cutlery"></i> <span> Restaurants </span> </a>
+                                <ul class="submenu">
+                                    <li><a href="#">Daily Sheets</a></li>
+                                    <li><a href="#">Truck Schedules</a></li>
+                                    <li><a href="#">Prep Labels</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="#"><i class="zmdi zmdi-file-text"></i> <span> Reports </span> </a>
+                            </li>
+
+
+
+
+
+                            <li class="has-submenu">
+                                <a href="#"><i class="zmdi zmdi-print"></i><span>Print Sheets </span> </a>
+                                <ul class="submenu megamenu">
+                                    <li>
+                                        <ul>
+                                            <li><a href="#">On Hand Count</a></li>
+                                            <li><a href="#">Pull Thaw</a></li>
+                                            <li><a href="#">Prep List</a></li>
+                                            <li><a href="#">Add From Brad</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="#">Bar Prep</a></li>
+                                            <li><a href="#">Portions</a></li>
+                                            <li><a href="#">Line Check</a></li>
+                                            <li><a href="#">Add From Brad</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                        <!-- End navigation menu  -->
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- END Navigation Bar-->
+
+
+        <div class="wrapper">
+            <div class="container">
+                <!-- TITLE ROW AND BUTTONS -->
+                <div class="row title-row">
+                    <div class="col-xs-12 col-sm-6">
+                        <h1 class="page-title m-t-20 m-b-0">Casa Linda: 7701</h1> 
+                        <h2 class="page-subtitle">246 Casa Linda Plaza, Dallas TX 75218</h2> 
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="row mt-20">
+                            <div class="col-xs-12 col-sm-4 col-lg-4">
+                                <div class="job-title">Manager</div>
+                                <div class="employee-name">Ned Newbie</div>
+                            </div>
+                            <div class="col-xs-12 col-sm-4 col-lg-4">
+                                <div class="job-title">Director of Operations</div>
+                                <div class="employee-name">Darin District</div>
+                            </div>
+                            <div class="col-xs-12 col-sm-4 col-lg-4">
+                                <div class="job-title">Vice President of Operations</div>
+                                <div class="employee-name">Regina Regions</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END TITLE ROW AND BUTTONS -->
+                <div class="row m-t-20">
+                    <div class="col-sm-3 col-lg-2">
+                        <button type="button" class="btn btn-lg btn-white m-b-10"><i class="fa fa-refresh pr-5" aria-hidden="true"></i>
+ Change Restaurant</button>
+                    </div>
+                    <div class="col-sm-3 col-sm-offset-6 col-lg-2 col-lg-offset-8">
+                        <button type="button" class="btn btn-lg btn-green m-b-10"><i class="fa fa-print pr-5" aria-hidden="true"></i>
+ Print Daily Sheets</button>
+                    </div>
+                </div>
+                <div class="row m-t-20">
+                    <div class="col-sm-6">
+                        <!-- GUEST FORECAST PANEL -->
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <h3 class="panel-title">Guest Forecast</h3>
+                                    </div>
+                                </div>
+                                <div class="row m-t-10">
+                                    <div class="col-lg-4">
+                                        <div class="report-title">Expected Guests Today</div>
+                                        <div class="large-metric">498</div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                    </div>
+                                    <div class="col-lg-4">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END GUEST FORECAST PANEL -->
+                    </div>
+                    <div class="col-sm-6">
+                        <!-- SALES FORECAST PANEL -->
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <div class="col-xs-12">
+                                    <h3 class="panel-title">Sales Forecast</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END SALES FORECAST PANEL -->
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+	           <!-- Footer -->
+                <footer class="footer text-right">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-6">
+                            	Copyright &copy; 2017 Brinker International. All rights reserved. 
+                            </div>
+                            <div class="col-xs-6">
+                                <ul class="pull-right list-inline m-b-0">
+                                    <li>
+                                        <a href="#">About</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Help</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- End Footer -->
+
+            </div>
+            <!-- end container -->
+
+
+			<!-- Right Sidebar -->
+			
+            <!-- Right Sidebar -->
+            <div class="side-bar right-bar">
+                <a href="javascript:void(0);" class="right-bar-toggle">
+                    <i class="zmdi zmdi-close-circle-o"></i>
+                </a>
+                <h4 class="">Notifications</h4>
+                <div class="notification-list nicescroll">
+                    <ul class="list-group list-no-border user-list">
+                        <li class="list-group-item">
+                            <a href="#" class="user-list-item">
+                                <div class="avatar">
+                                    <img src="assets/images/avatar_brad.jpg" alt="">
+                                </div>
+                                <div class="user-desc">
+                                    <span class="name">Brad Brashears</span>
+                                    <span class="desc">There are new menuitems available</span>
+                                    <span class="time">10:00 AM</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#" class="user-list-item">
+                                <div class="avatar">
+                                    <img src="assets/images/avatar_brad.jpg" alt="">
+                                </div>
+                                <div class="user-desc">
+                                    <span class="name">Brad Brashears</span>
+                                    <span class="desc">Test Announcement 1</span>
+                                    <span class="time">1 day ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#" class="user-list-item">
+                                <div class="avatar">
+                                    <img src="assets/images/avatar_brad.jpg" alt="">
+                                </div>
+                                <div class="user-desc">
+                                    <span class="name">Brad Brashears</span>
+                                    <span class="desc">Test Announcement 2</span>
+                                    <span class="time">2 days ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list-group-item active">
+                            <a href="#" class="user-list-item">
+                                <div class="avatar">
+                                    <img src="assets/images/avatar_brad.jpg" alt="">
+                                </div>
+                                <div class="user-desc">
+                                    <span class="name">Brad Brashears</span>
+                                    <span class="desc">Test Announcement 3</span>
+                                    <span class="time">3 days ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list-group-item active">
+                            <a href="#" class="user-list-item">
+                                <div class="icon bg-warning">
+                                    <i class="zmdi zmdi-settings"></i>
+                                </div>
+                                <div class="user-desc">
+                                    <span class="name">Admin</span>
+                                    <span class="desc">KS Software Update</span>
+                                    <span class="time">10 days ago</span>
+                                </div>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <!-- /Right-bar -->
+        </div>
+
+
+
+        <!-- jQuery  -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/detect.js"></script>
+        <script src="assets/js/fastclick.js"></script>
+        <script src="assets/js/jquery.slimscroll.js"></script>
+        <script src="assets/js/jquery.blockUI.js"></script>
+        <script src="assets/js/waves.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/jquery.nicescroll.js"></script>
+        <script src="assets/js/jquery.scrollTo.min.js"></script>
+
+
+        <!-- App js -->
+        <script src="assets/js/jquery.core.js"></script>
+        <script src="assets/js/jquery.app.js"></script>
+
+    </body>
+
+</html>
