@@ -1,0 +1,227 @@
+/* Chili's overrides for KitchenSync Styles */
+
+.header-container {
+	height: 43px;
+	background-color: #5D9732;
+}
+
+.body-container {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.page-title {
+	color: #5C5C5C;
+	font-family: "Gotham Rounded";
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 36px;
+}
+
+.section-title {
+	color: #5C5C5C;
+	font-family: "Gotham Rounded";
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 24px;
+	text-transform: capitalize;
+}
+
+.panel-title {
+	color: #5D9732;
+	font-family: "Gotham Rounded";
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 19px;
+	text-transform: capitalize;
+}
+
+.title-buttons {
+	margin-top: 20px;
+}
+
+.title-buttons .btn {
+	margin-bottom: 10px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.btn-green {
+	border-radius: 6px;
+	background-color: #5D9732;
+	color: #FFFFFF;
+	font-family: "Gotham Rounded";
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 12px;
+	padding-top: 12px;
+	padding-bottom: 10px;
+	text-align: center;
+	text-transform: uppercase;
+	box-shadow: 0 3px 0 0 #537A36;
+	overflow: hidden;
+}
+
+.btn-red {
+	border-radius: 6px;
+	background-color: #D61F26;
+	color: #FFFFFF;
+	font-family: "Gotham Rounded";
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 12px;
+	padding-top: 12px;
+	padding-bottom: 10px;
+	text-align: center;
+	text-transform: uppercase;
+	box-shadow: 0 3px 0 0 #A72019;
+	overflow: hidden;
+}
+
+.btn-white {
+	border-radius: 6px;
+	border: 1px solid #d6d6d6;
+	background-color: #FFF;
+	color: #5C5C5C;
+	font-family: "Gotham Rounded";
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 12px;
+	padding-top: 12px;
+	padding-bottom: 10px;
+	text-align: center;
+	text-transform: uppercase;
+	box-shadow: 0 3px 0 0 #d6d6d6;
+	overflow: hidden;
+}
+
+/* Margin and Padding classes (bootstrap 4 emulating) */
+
+.mt-10 {
+	margin-top:10px;
+}
+
+.mb-10 {
+	margin-bottom: 10px;
+}
+
+.my-10 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.mt-20 {
+	margin-top:20px;
+}
+
+.mb-20 {
+	margin-bottom: 20px;
+}
+
+.my-20 {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.pl-5 {
+	padding-left: 5px;
+}
+
+.pl-10 {
+	padding-left: 10px;
+}
+
+.pr-5 {
+	padding-right: 5px;
+}
+
+.pr-10 {
+	padding-right: 10px;
+}
+
+.px-10 {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.px-5 {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.panel {
+	border: 0.5px solid #CCCCCC;
+	border-radius: 4px;
+	background-color: #FFFFFF;
+	box-shadow: 0 2px 4px 0 rgba(204,204,204,0.49);
+}
+
+.form-label {
+	color: #5C5C5C;
+	font-family: "Gotham Rounded";
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 14px;
+	text-transform: uppercase;
+	margin-top: 14px;
+	margin-bottom: 8px;
+}
+
+@media (max-width: 767px){
+
+	  .seven-cols .col-md-1,
+	  .seven-cols .col-sm-1,
+	  .seven-cols .col-lg-1  {
+	    padding-left: 15px;
+	    padding-right: 15px;
+	}
+}
+
+@media (min-width: 768px){
+  .seven-cols .col-md-1,
+  .seven-cols .col-sm-1,
+  .seven-cols .col-lg-1  {
+    width: 100%;
+	*width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 10px;
+	}
+}
+
+@media (min-width: 992px) {
+  .seven-cols .col-md-1,
+  .seven-cols .col-sm-1,
+  .seven-cols .col-lg-1 {
+    width: 14.285714285714285714285714285714%;
+    *width: 14.285714285714285714285714285714%;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 0px;
+  }
+
+  .seven-cols .col-md-1:first-child,
+  .seven-cols .col-sm-1:first-child,
+  .seven-cols .col-lg-1:first-child  {
+  	padding-left: 15px;
+	}
+  .seven-cols .col-md-1:last-child,
+  .seven-cols .col-sm-1:last-child,
+  .seven-cols .col-lg-1:last-child  {
+  	padding-right: 15px;
+	}
+}
+
+/**
+ *  The following is not really needed in this case
+ *  Only to demonstrate the usage of @media for large screens
+ */    
+@media (min-width: 1200px) {
+  .seven-cols .col-md-1,
+  .seven-cols .col-sm-1,
+  .seven-cols .col-lg-1 {
+    width: 14.285714285714285714285714285714%;
+    *width: 14.285714285714285714285714285714%;
+  }
+}
+

@@ -1,0 +1,402 @@
+<!doctype html>
+<!--[if lte IE 9]> <html class="lte-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="en"> <!--<![endif]-->
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+        <title>Prep Item Recipe</title>
+
+        <!-- domo arigato mr roboto.. load this font -->
+        <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500' rel='stylesheet' type='text/css'>
+
+        <!-- BEGIN Load Styles for Plugins -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css"
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css" >
+
+        <!-- override styles -->
+        <link rel="stylesheet" href="assets/css/chilis.css" />
+
+    </head>
+
+    <body>
+        <!-- HEADER -->
+        <div class="container-fluid header-container">
+
+        </div>
+        <!-- END HEADER -->
+
+        <!-- BODY CONTAINER -->
+        <div class="container-fluid body-container">
+            
+            <!-- TITLE ROW AND BUTTONS -->
+            <div class="row title-row">
+                <div class="col-xs-12 col-sm-7">
+                    <h1 class="page-title">Prep Item Recipe</h1> 
+                </div>
+                <div class="col-xs-12 col-sm-5">
+                    <div class="row title-buttons">
+                        <div class="col-xs-12 col-sm-3 col-lg-4 pr-10">
+                            <button type="button" class="btn btn-lg btn-green">Save</button>
+                        </div>
+                        <div class="col-xs-12 col-sm-5 col-lg-4 px-10">
+                            <button type="button" class="btn btn-lg btn-green">Save as draft</button>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-lg-4 pl-10">
+                            <button type="button" class="btn btn-lg btn-white">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END TITLE ROW AND BUTTONS -->
+
+            <!-- BEGIN BODY CONTENT -->
+            <div class="row mt-20">
+                <div class="col-xs-12">
+                    <!-- PREP ITEM DETAIL PANEL -->
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <h3 class="panel-title">Prep Item Detail:</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                          <div class="form-group">
+                                            <label class="form-label" for="prep-recipe-name">Prep Recipe Name:</label>
+                                            <input type="text" class="form-control" id="prep-recipe-name" name="prep-recipe-name" placeholder="Input value" required="true">
+                                          </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                          <div class="form-group">
+                                            <label class="form-label" for="short-name">Short Name:</label>
+                                            <input type="text" class="form-control" id="prep-recipe-short-name" name="prep-recipe-short-name" placeholder="Input value" required="true">
+                                          </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                          <div class="form-group">
+                                            <label class="form-label" for="prep-recipe-plu">PLU:</label>
+                                            <input type="text" class="form-control" id="prep-recipe-plu" name="prep-recipe-plu" placeholder="Input value" required="true">
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                  <div class="form-group">
+                                    <label class="form-label" for="prep-recipe-category">Category:</label>
+                                    <select class="form-control" id="prep-recipe-category" name="prep-recipe-category" required="true">
+                                      <option>Select Option</option>
+                                      <!-- Options -->
+                                    </select>
+                                  </div>
+                                  <div class="form-group">
+                                    <label class="form-label" for="prep-recipe-zone">Zone:</label>
+                                    <select class="form-control" id="prep-recipe-zone" name="prep-recipe-zone" required="true">
+                                      <option>Select Option</option>
+                                      <!-- Options -->
+                                    </select>
+                                  </div>
+
+                                </div>
+                                <div class="col-lg-2 col-sm-6">
+                                  <label class="form-label" for="prep-recipe-shelf-life-units">Shelf Life:</label>
+                                    <div class="row">
+                                        <div class="col-xs-4 pr-5">
+                                            <input type="text" class="form-control" aria-label="prep-recipe-shelf-life-units" name="prep-recipe-shelf-life-units" id="prep-recipe-shelf-life-units" placeholder="00">
+                                        </div>
+                                        <div class="col-xs-8 pl-5">
+                                            <select class="form-control" id="prep-recipe-shelf-life-uom" name="prep-recipe-shelf-life-uom" required="true">
+                                              <option>Duration</option>
+                                              <!-- Options -->
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                  <div class="form-group">
+                                    <label class="form-label" for="prep-recipe-resource">Resource:</label>
+                                    <select class="form-control" id="prep-recipe-resource" name="prep-recipe-resource" required="true">
+                                      <option>Select Option</option>
+                                      <!-- Options -->
+                                    </select>
+                                  </div>
+
+                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                  <div class="form-group">
+                                    <label class="form-label" for="prep-recipe-video">Prep Video:</label>
+                                    <input type="text" class="form-control" id="prep-recipe-video" name="prep-recipe-video" placeholder="Input value">
+                                  </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END PREP ITEM DETAIL PANEL -->
+                </div>
+            </div>
+            <div class="row">
+                <div class=" col-sm-6 col-lg-4">
+                    <!-- PULL THAW PANEL -->
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <h3 class="panel-title">Pull Thaw:</h3>
+                            <div class="row">
+                                <div class="col-lg-4">    
+                                    <div class="form-group">
+                                        <label class="form-label" for="prep-recipe-pull-thaw">Pull Thaw:</label>
+                                        <label class="radio-inline">
+                                          <input type="radio" name="prep-recipe-pull-thaw" id="yes-radio" value="yes" checked="true"> Yes
+                                        </label>
+                                        <label class="radio-inline">
+                                          <input type="radio" name="prep-recipe-pull-thaw" id="no-radio" value="no"> No
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8">
+                                    <label class="form-label" for="prep-recipe-yield-units">Shelf Life:</label>
+                                    <div class="row">
+                                        <div class="col-xs-3 pr-5">
+                                            <input type="text" class="form-control" aria-label="prep-recipe-yield-units" name="prep-recipe-yield-units" id="prep-recipe-yield-units" placeholder="00">
+                                        </div>
+                                        <div class="col-xs-9 pl-5">
+                                            <select class="form-control" id="prep-recipe-yield-uom" name="prep-recipe-yield-uom" required="true">
+                                              <option>UOM</option>
+                                              <!-- Options -->
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END PULL THAW PANEL -->
+                </div>
+                <div class="col-sm-6 col-lg-8">
+                    <!-- PREP SCHEDULE PANEL -->
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <h3 class="panel-title">Prep Schedule:</h3>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <label class="form-label" for="prep-recipe-pull-days">Days:</label>
+                                        <div class="row seven-cols">
+                                            <div class="col-sm-1">
+                                                <button type="button" class="btn btn-lg btn-green btn-day-toggle" style="width:100%">Thursday</button>
+                                            </div>
+                                            <div class="col-sm-1">
+                                                <button type="button" class="btn btn-lg btn-green btn-day-toggle" style="width:100%">Friday</button>
+                                            </div>
+                                            <div class="col-sm-1">
+                                                <button type="button" class="btn btn-lg btn-green btn-day-toggle" style="width:100%">Saturday</button>
+                                            </div>
+                                            <div class="col-sm-1">
+                                                <button type="button" class="btn btn-lg btn-green btn-day-toggle" style="width:100%">Sunday</button>
+                                            </div>
+                                            <div class="col-sm-1">
+                                                <button type="button" class="btn btn-lg btn-green btn-day-toggle" style="width:100%">Monday</button>
+                                            </div>
+                                            <div class="col-sm-1">
+                                                <button type="button" class="btn btn-lg btn-green btn-day-toggle" style="width:100%">Tuesday</button>
+                                            </div>
+                                            <div class="col-sm-1">
+                                                <button type="button" class="btn btn-lg btn-green btn-day-toggle" style="width:100%">Wednesday</button>
+                                            </div>
+                                        </div>
+
+                                    <!--<div class="form-group">
+                                        <label class="checkbox-inline">
+                                          <input type="checkbox" name="prep-recipe-sched-thursday" id="prep-recipe-sched-thursday" value="thursday" checked="true"> Thursday
+                                        </label>
+                                        <label class="checkbox-inline">
+                                          <input type="checkbox" name="prep-recipe-sched-friday" id="prep-recipe-sched-friday" value="friday" checked="true"> Friday
+                                        </label>
+                                        <label class="checkbox-inline">
+                                          <input type="checkbox" name="prep-recipe-sched-saturday" id="prep-recipe-sched-saturday" value="saturday" checked="true"> Saturday
+                                        </label>
+                                        <label class="checkbox-inline">
+                                          <input type="checkbox" name="prep-recipe-sched-sunday" id="prep-recipe-sched-sunday" value="sunday" checked="true"> Sunday
+                                        </label>
+                                        <label class="checkbox-inline">
+                                          <input type="checkbox" name="prep-recipe-sched-monday" id="prep-recipe-sched-monday" value="monday" checked="true"> Monday
+                                        </label>
+                                        <label class="checkbox-inline">
+                                          <input type="checkbox" name="prep-recipe-sched-tuesday" id="prep-recipe-sched-tuesday" value="tuesday" checked="true"> Tuesday
+                                        </label>
+                                        <label class="checkbox-inline">
+                                          <input type="checkbox" name="prep-recipe-sched-wednesday" id="prep-recipe-sched-wednesday" value="wednesday" checked="true"> Wednesday
+                                        </label>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END PREP SCHEDULE PANEL -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <!-- EQUIPMENT AND COOKING DETAILS PANEL -->
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <h3 class="panel-title">Equipment and Cooking Details:</h3>
+                        </div>
+                    </div>
+                    <!-- END EQUIPMENT AND COOKING DETAILS PANEL -->
+                </div>
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <!-- LABOR TIME PANEL -->
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <h3 class="panel-title">Labor Time:</h3>
+                                </div>
+                            </div>
+                            <!-- END LABOR TIME PANEL -->
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <!-- YIELD AND MEASURE PANEL -->
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <h3 class="panel-title">Yield and Measure:</h3>
+                                </div>
+                            </div>
+                            <!-- END YIELD AND MEASURE PANEL -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <!-- LINE CHECK PANEL -->
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <h3 class="panel-title">Line Check:</h3>
+                        </div>
+                    </div>
+                    <!-- END LINE CHECK PANEL -->
+                </div>
+                <div class="col-sm-6">
+                    <!-- NOTES PANEL -->
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            Notes Panel
+                        </div>
+                    </div>
+                    <!-- END NOTES PANEL -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <hr />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-7">
+                    <h2 class="section-title">Prep Procedures:</h2>
+                </div>
+                <div class="col-xs-12 col-sm-5">
+                    <div class="row title-buttons">
+                        <div class="col-xs-12 col-sm-6 col-sm-offset-6 col-lg-4 col-lg-offset-8 pl-10">
+                            <button type="button" class="btn btn-white"><span class="glyphicon glyphicon-refresh" aria-hidden="true"></span> Refresh</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PREP STEP ROW (foreach) -->
+            <div class="row mt-20">
+                <div class="col-xs-12">
+                    <!-- PREP STEP PANEL -->
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            Prep Step Panel
+                        </div>
+                    </div>
+                    <!-- END PREP STEP PANEL -->
+                </div>
+            </div>
+            <!-- END PREP STEP ROW -->
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-5">
+                    <div class="row title-buttons">
+                        <div class="col-xs-12 col-sm-6 col-lg-4 pr-10">
+                            <button type="button" class="btn btn-green">+ Add Step</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <hr />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-7">
+                    <h2 class="section-title">Ingredients &amp; Prep Items:</h2>
+                </div>
+                <div class="col-xs-12 col-sm-5">
+                    <div class="row title-buttons">
+                        <div class="col-xs-12 col-sm-6 col-sm-offset-6 col-lg-4 col-lg-offset-8 pl-10">
+                            <button type="button" class="btn btn-white"><span class="glyphicon glyphicon-refresh" aria-hidden="true"></span> Refresh</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PREP ITEM ROW (foreach) -->
+            <div class="row mt-20">
+                <div class="col-xs-12">
+                    <!-- PREP ITEM PANEL -->
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            Prep Items &amp; Ingredients Panel
+                        </div>
+                    </div>
+                    <!-- END PREP ITEM PANEL -->
+                </div>
+            </div>
+            <!-- END PREP ITEM ROW -->
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-5">
+                    <div class="row title-buttons">
+                        <div class="col-xs-12 col-sm-6 col-lg-4 pr-10">
+                            <button type="button" class="btn btn-green">+ Add Existing</button>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-lg-4 pl-10">
+                            <button type="button" class="btn btn-green">+ Create New</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+
+        <script>
+        $(document).ready(function(){
+            $(".btn-day-toggle").click(function(){
+                $(this).toggleClass("btn-white"); //Adds 'a', removes 'b'
+            });
+        });
+
+        </script>
+    </body>
+</html>
