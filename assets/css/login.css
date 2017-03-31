@@ -1,0 +1,105 @@
+html { 
+  background: url('../images/login-bg.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+html, 
+body {
+    height: 100%;
+}
+
+body {
+	background-color: transparent;
+}
+
+.wrapper {
+	margin-top: 50px;
+}
+
+.navbar-default {
+	background-color: #fff;
+	height: 80px;
+	padding-top: 15px;
+}
+
+.navbar-brand
+{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin:0 auto;
+    padding: 0px;
+}
+
+.navbar-toggle {
+    z-index:3;
+}
+
+.navbar-nav > li > a.login-help-link {
+	padding-top: 5px;
+}
+
+.login-help-icon{
+	font-size: 40px;
+	padding-right: 30px;
+}
+
+#top-logo-div {	
+	overflow:hidden; 
+	width: 368px;
+    margin: 0 auto;
+}
+
+.headline-container {
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#66000000,endColorstr=#66000000)";
+	zoom: 1;
+	background: rgba(0, 0, 0, 0.6);
+	color: white;
+	border-radius: 20px;
+	margin-bottom: 10px;
+	text-align: center;
+	padding: 72px 15px;
+}
+
+.login-welcome {
+	color: #FFFFFF;	
+	font-family: "Nunito", sans-serif;	
+	font-size: 36px;	
+	font-weight: 700;	
+	line-height: 43px;	
+	text-align: center;
+}
+
+.btn-green {
+	border-radius: 6px;
+	background-color: #5D9732;
+	color: #FFFFFF;
+	font-family: 'Nunito', sans-serif;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 12px;
+	padding-top: 12px;
+	padding-bottom: 10px;
+	text-align: center;
+	text-transform: uppercase;
+	box-shadow: 0 3px 0 0 #537A36;
+	overflow: hidden;
+	width: 100%;
+}
+
+#forgot-link { 
+	color: #fff;
+	text-decoration: none;
+}
+
+#forgot-link:hover { 
+	text-decoration: underline;
+}
+
+footer {
+	background-color: #ebeff2;
+}

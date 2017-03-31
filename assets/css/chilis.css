@@ -1,4 +1,10 @@
 /* Chili's overrides for KitchenSync Styles */
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,500,700|Roboto:300,400,700');
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+}
 
 .header-container {
 	height: 43px;
@@ -12,7 +18,7 @@
 
 .page-title {
 	color: #5C5C5C;
-	font-family: "Gotham Rounded";
+	font-family: 'Nunito', sans-serif;
 	font-size: 30px;
 	font-weight: bold;
 	line-height: 36px;
@@ -20,7 +26,7 @@
 
 .section-title {
 	color: #5C5C5C;
-	font-family: "Gotham Rounded";
+	font-family: 'Nunito', sans-serif;
 	font-size: 20px;
 	font-weight: bold;
 	line-height: 24px;
@@ -29,7 +35,7 @@
 
 .panel-title {
 	color: #5D9732;
-	font-family: "Gotham Rounded";
+	font-family: 'Nunito', sans-serif;
 	font-size: 16px;
 	font-weight: bold;
 	line-height: 19px;
@@ -50,7 +56,7 @@
 	border-radius: 6px;
 	background-color: #5D9732;
 	color: #FFFFFF;
-	font-family: "Gotham Rounded";
+	font-family: 'Nunito', sans-serif;
 	font-size: 12px;
 	font-weight: 500;
 	line-height: 12px;
@@ -66,7 +72,7 @@
 	border-radius: 6px;
 	background-color: #D61F26;
 	color: #FFFFFF;
-	font-family: "Gotham Rounded";
+	font-family: 'Nunito', sans-serif;
 	font-size: 12px;
 	font-weight: 500;
 	line-height: 12px;
@@ -83,7 +89,7 @@
 	border: 1px solid #d6d6d6;
 	background-color: #FFF;
 	color: #5C5C5C;
-	font-family: "Gotham Rounded";
+	font-family: 'Nunito', sans-serif;
 	font-size: 12px;
 	font-weight: 500;
 	line-height: 12px;
@@ -97,56 +103,44 @@
 
 /* Margin and Padding classes (bootstrap 4 emulating) */
 
-.mt-10 {
+.mt-10, .my-10 {
 	margin-top:10px;
 }
 
-.mb-10 {
+.mb-10, .my-10 {
 	margin-bottom: 10px;
 }
 
-.my-10 {
-	margin-top: 10px;
-	margin-bottom: 10px;
+.mt-15, .my-15 {
+	margin-top:15px;
 }
 
-.mt-20 {
+.mb-15, .my-15 {
+	margin-bottom: 15px;
+}
+
+.mt-20, .my-20 {
 	margin-top:20px;
 }
 
-.mb-20 {
+.mb-20, .my-20 {
 	margin-bottom: 20px;
 }
 
-.my-20 {
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-
-.pl-5 {
+.pl-5, .px-5 {
 	padding-left: 5px;
 }
 
-.pl-10 {
+.pl-10, .px-10 {
 	padding-left: 10px;
 }
 
-.pr-5 {
+.pr-5, .px-5 {
 	padding-right: 5px;
 }
 
-.pr-10 {
+.pr-10, .px-5 {
 	padding-right: 10px;
-}
-
-.px-10 {
-	padding-left: 10px;
-	padding-right: 10px;
-}
-
-.px-5 {
-	padding-left: 5px;
-	padding-right: 5px;
 }
 
 .panel {
@@ -158,7 +152,7 @@
 
 .form-label {
 	color: #5C5C5C;
-	font-family: "Gotham Rounded";
+	font-family: 'Nunito', sans-serif;
 	font-size: 12px;
 	font-weight: 500;
 	line-height: 14px;
