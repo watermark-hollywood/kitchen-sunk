@@ -36,20 +36,27 @@
 		},
 
 		build: function() {
-			this.datatable = this.$table.DataTable({
-				aoColumns: [
-					null, 
-					null,	// Thur
-					null,	// Fri
-					null,	// Sat
-					null,	// Sun
-					null, 	// Mon
-					null, 	// Tue
-					null, 	// Wed
-					{ "bSortable": false }
-				]
+			this.datatable = this.$table.DataTable({ajax: {"url":"guestcount","dataSrc":""},
+                "columns": [
+                    {"data": "title"},
+                    {"data": "thursday"},
+                    {"data": "friday"},
+                    {"data": "saturday"},
+                    {"data": "sunday"},
+                    {"data": "monday"},
+                    {"data": "tuesday"},
+                    {"data": "wednesday"},
+					{"data": null, "defaultContent": "<a href=\"#\" class=\"hidden on-editing save-row\"><i class=\"fa fa-save\"></i></a>" +
+            	"<a href=\"#\" class=\"hidden on-editing cancel-row\"><i class=\"fa fa-times\"></i></a>" +
+                "<a href=\"#\" class=\"on-default edit-row\"><i class=\"fa fa-pencil\"></i></a>" +
+                "<a href=\"#\" class=\"on-default remove-row\"><i class=\"fa fa-trash-o\"></i></a>", className: "actions"},
+					{"data": "startOfWeek", "className": "hidden"}
+                ],
+				"ordering": false,
+                "drawCallback" : function(settings) {
+					$('#datatable-editable').children('tbody').children('tr:first').children('.actions').addClass('hidden');
+				}
 			});
-
 			window.dt = this.datatable;
 
 			return this;
@@ -171,6 +178,7 @@
 		rowEdit: function( $row ) {
 			var _self = this,
 				data;
+            var dayNames = ["thursday", "friday", "saturday", "sunday", "monday", "tuesday", "wednesday"];
 
 			data = this.datatable.row( $row.get(0) ).data();
 
@@ -180,7 +188,9 @@
 				if ( $this.hasClass('actions') ) {
 					_self.rowSetActionsEditing( $row );
 				} else {
-					$this.html( '<input type="text" class="form-control input-block" value="' + data[i] + '"/>' );
+					if (i > 0 && i < 8) {
+                        $this.html('<input type="text" class="form-control input-block" value="' + data[dayNames[i - 1]] + '"/>');
+                    }
 				}
 			});
 		},
@@ -195,25 +205,42 @@
 				$row.removeClass( 'adding' );
 			}
 
-			values = $row.find('td').map(function() {
+			values = $row.find('td').map(function(index) {
+                var dayNames = ["title", "thursday", "friday", "saturday", "sunday", "monday", "tuesday", "wednesday","","startOfWeek"];
 				var $this = $(this);
 
 				if ( $this.hasClass('actions') ) {
 					_self.rowSetActionsDefault( $row );
 					return _self.datatable.cell( this ).data();
 				} else {
-					return $.trim( $this.find('input').val() );
+					var name = dayNames[index];
+					var rvalue;
+					if (index == 0 || index == 9) {
+						rvalue = $this.html();
+					} else {
+                        rvalue = $.trim($this.find('input').val());
+                    }
+                    var retObject = new Object;
+                    retObject[name] = rvalue;
+					return retObject;
 				}
 			});
 
-			this.datatable.row( $row.get(0) ).data( values );
-
-			$actions = $row.find('td.actions');
-			if ( $actions.get(0) ) {
-				this.rowSetActionsDefault( $row );
+			var value = new Object;
+			for (var i = 0; i < 10; i++) {
+				if (i != 8) {
+                    value[Object.keys(values[i])] = values[i][Object.keys(values[i])];
+                }
 			}
-
-			this.datatable.draw();
+            $.ajax({
+				context: this,
+                type:"POST",
+                url: this.datatable.ajax.url(),
+                data: JSON.stringify(value),
+                complete: function () {
+                    this.datatable.ajax.reload();
+                }
+            });
 		},
 
 		rowRemove: function( $row ) {
@@ -238,10 +265,6 @@
 
 	$(function() {
 		EditableTable.initialize();
-
-
-
-
 	});
 
 }).apply( this, [ jQuery ]);
