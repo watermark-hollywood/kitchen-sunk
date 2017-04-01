@@ -33,15 +33,15 @@ hr {
 }
 
 .green {
-	color: #5D9732;
+	color: #5D9732 !important;
 }
 
 .red {
-	color: #D61F26;
+	color: #D61F26 !important;
 }
 
 .yellow {
-	color: #FFCC00;
+	color: #FFCC00 !important;
 }
 
 .all-caps {
