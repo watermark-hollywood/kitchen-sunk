@@ -16,6 +16,49 @@ body {
 	margin-right: 15px;
 }
 
+a {
+	color: #5D9732;
+}
+
+a:hover {
+	color: #5D9732;
+	opacity: .6;
+}
+
+hr {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border: 0;
+	border-top: 1px solid #eee;
+}
+
+.green {
+	color: #5D9732;
+}
+
+.red {
+	color: #D61F26;
+}
+
+.yellow {
+	color: #FFCC00;
+}
+
+.all-caps {
+	text-transform: uppercase;
+}
+
+.a-50 {
+	opacity: .5;
+}
+
+.today-date {
+	font-family: 'Nunito', sans-serif;
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 56px;
+}
+
 .page-title, .large-metric {
 	color: #5C5C5C;
 	font-family: 'Nunito', sans-serif;
@@ -24,12 +67,31 @@ body {
 	line-height: 36px;
 }
 
-.page-subtitle {
+.page-subtitle, .today-month, .today-day {
 	color: #979797;	
 	font-family: "Nunito", sans-serif;	
 	font-weight: 300;
 	font-size: 24px;	
-	line-height: 33px;
+	line-height: 28px;
+}
+
+.today-day {
+	font-weight: 700;
+}
+
+.small-metric, .print-sheet-link {
+	font-family: 'Nunito', sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+}
+
+.print-sheet-link {
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.print-sheet-link:hover {
+	text-decoration: underline;
 }
 
 .job-title, .report-title {
@@ -39,6 +101,14 @@ body {
 	font-weight: 500;	
 	line-height: 12px;	
 	text-transform: uppercase;
+}
+
+.schedule-panel-text {
+	color: #5c5c5c;
+	font-family: "Nunito", sans-serif;	
+	font-size: 10px;	
+	font-weight: 500;	
+	line-height: 14px;	
 }
 
 .job-title {
@@ -54,7 +124,7 @@ body {
 	font-weight: 300;
 }
 
-.section-title {
+.section-title, .medium-metric {
 	color: #5C5C5C;
 	font-family: 'Nunito', sans-serif;
 	font-size: 20px;
@@ -192,6 +262,10 @@ body {
 	text-transform: uppercase;
 	margin-top: 14px;
 	margin-bottom: 8px;
+}
+
+.dashboard-icon{
+	font-size: 75px;
 }
 
 @media (max-width: 767px){
