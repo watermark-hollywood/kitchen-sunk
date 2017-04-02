@@ -22,7 +22,7 @@ tr td {
 		line-height: 11px;
 }
 
-tr td:first-child {
+tr td.emphasis-column {
 		color: #5D9732;	
 		font-family: "Nunito", sans-serif;	
 		font-size: 12px;	

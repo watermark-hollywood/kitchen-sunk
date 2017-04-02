@@ -19,8 +19,6 @@
         <link href="assets/plugins/datatables/fixedHeader.bootstrap.min.css" rel="stylesheet" type="text/css" />
         <link href="assets/plugins/datatables/responsive.bootstrap.min.css" rel="stylesheet" type="text/css" />
         <link href="assets/plugins/datatables/scroller.bootstrap.min.css" rel="stylesheet" type="text/css" />
-        <link href="assets/plugins/datatables/select.dataTables.min.css" rel="stylesheet" type="text/css" />
-
 
         <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <link href="assets/css/core.css" rel="stylesheet" type="text/css" />
@@ -29,6 +27,8 @@
         <link href="assets/css/pages.css" rel="stylesheet" type="text/css" />
         <link href="assets/css/menu.css" rel="stylesheet" type="text/css" />
         <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/chilis.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/restaurants.css" rel="stylesheet" type="text/css" />
 
         <!-- HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -40,7 +40,6 @@
         <script src="assets/js/modernizr.min.js"></script>
 
     </head>
-
 
 
     <body>
@@ -190,118 +189,127 @@
             <div class="container">
 
 				<!-- Page Content -->
-				                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="btn-group pull-right m-t-15">
-                            <button type="button" class="btn btn-success btn-bordred waves-effect w-md waves-light m-b-5 m-r-5" aria-expanded="false">
-                            Print <span class="m-l-5"><i class="fa fa-print"></i></span>
-                            </button>
-
-                            <button type="button" class="btn btn-success btn-bordred waves-effect w-md waves-light m-b-5 m-r-5" aria-expanded="false">
-                            Save <span class="m-l-5"><i class="fa fa-save"></i></span>
-                            </button>
-                            <button type="button" class="btn btn-default btn-bordred waves-effect w-md m-b-5 m-r-5" aria-expanded="false">
-                            Cancel </button>
-
-
-                            
-                            
-
+				
+                <div class="row m-t-20">
+                    <div class="col-sm-7">
+                        <h1 class="page-title m-b-0">Line Prep</h1>
+                        <h2 class="page-subtitle">Tuesday, March 14</h2>
+                    </div>
+                    <div class="col-sm-5">
+                    <div class="row title-buttons">
+                        <div class="col-xs-12 col-sm-3 col-lg-4 pr-10">
+                            <button type="button" class="btn btn-lg btn-green"><span class="large-icon"><i class="fa fa-print" aria-hidden="true"></i>
+</span>&nbsp;&nbsp;Print</button>
                         </div>
-                        <h1 class="page-title">On-Hands Count</h1>
-                        <h4 class="page-subtitle">Friday - 2017-03-31</h4>
+                        <div class="col-xs-12 col-sm-5 col-lg-4 px-10">
+                            <button type="button" class="btn btn-lg btn-green">Save</button>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-lg-4 pl-10">
+                            <button type="button" class="btn btn-lg btn-white">Cancel</button>
+                        </div>
+                    </div>
                     </div>
                 </div>
 
-
-
-
-                <div class="row">
+                <div class="row m-t-40">
                     <div class="col-sm-12">
-                        <div class="panel">
-                            <div class="panel-body">
+                        <div class="card-box table-responsive">
 
+                            
 
-                                <div class="">
-                                    <table class="table table-striped" id="datatable-printlabels">
-                                        <thead>
-                                            <tr>
-                                                <th>Count</th>                                                                                                   
-                                                <th>Item</th>
-                                                <th>Shelf Life</th>
-                                                <th>Batch Yield Each</th>
-                                                <th>Count By</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>
-                                                    <div class="col-sm-2">
-                                                        <input type="text" style="z-index: 10000;" class="form-control" placeholder="0">
-                                                    </div>
-                                                </td>
-                                                <td>FAJ BOAT</td>
-                                                <td>18 hour</td>
-                                                <td>0</td>
-                                                <td>1 batch</td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="col-sm-2">
-                                                        <input type="text" class="form-control" placeholder="0">
-                                                    </div>
-                                                </td>
-                                                <td>BELL/0 1OZ PORT</td>
-                                                <td>28 hour</td>
-                                                <td>0</td>
-                                                <td>1/9 shallow</td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="col-sm-2">
-                                                        <input type="text" class="form-control" placeholder="0">
-                                                    </div>
-                                                </td>
-                                                <td>BELL PORT</td>
-                                                <td>28 hour</td>
-                                                <td>8.5 3oz port (1 kit) </td>
-                                                <td>1 batch</td>                                            
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="col-sm-2">
-                                                        <input type="text" class="form-control" placeholder="0">
-                                                    </div>
-                                                </td>
-                                                <td>FO PORT</td>
-                                                <td>28 hour</td>
-                                                <td>24.0 2.5oz port (1 kit)</td>
-                                                <td>1 batch</td>                                            
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="col-sm-2">
-                                                        <input type="text" class="form-control" placeholder="0">
-                                                    </div> 
-                                                </td>
-                                                <td>PENNE 9OZ PORT</td>
-                                                <td>2 day</td>
-                                                <td>38.0 portions (1 10 lb bag uncooked)</td>
-                                                <td>1 batch</td>                                            
-                                            </tr>
-                                            
+                            
+                            <table id="on-hand-table" class="table table-striped dt-responsive" cellspacing="0">
+                                <thead>
+                                    <tr>
+                                        <th>Done</th>
+                                        <th>Zone</th>
+                                        <th>Item</th>
+                                        <th>Shelf Life</th>
+                                        <th>Batch Yield</th>
+                                        <th>Qty</th>
+                                        <th class="hidden-xs hidden-sm hidden-md"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><input type="checkbox" value="done"></td>
+                                        <td>1</td>
+                                        <td class="emphasis-column all-caps">MPC Kit</td>
+                                        <td>12 hour</td>
+                                        <td>9 portions</td>
+                                        <td>7</td>
+                                        <td class="hidden-xs hidden-sm hidden-md"></td>
+                                    </tr>
 
-                                            
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <!-- end: panel body -->
+                                    <tr>
+                                        <td><input type="checkbox" value="done"></td>
+                                        <td>1</td>
+                                        <td class="emphasis-column all-caps">Car Sal Kit</td>
+                                        <td>18 hour</td>
+                                        <td>9 portions</td>
+                                        <td>7</td>
+                                        <td class="hidden-xs hidden-sm hidden-md"></td>
+                                    </tr>
 
-                        </div> <!-- end panel -->
-                    </div> <!-- end col-->
+                                    <tr>
+                                        <td><input type="checkbox" value="done"></td>
+                                        <td>1</td>
+                                        <td class="emphasis-column all-caps">Bite Paty</td>
+                                        <td>20 hour</td>
+                                        <td>4 each</td>
+                                        <td>7</td>
+                                        <td class="hidden-xs hidden-sm hidden-md"></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><input type="checkbox" value="done"></td>
+                                        <td>1</td>
+                                        <td class="emphasis-column all-caps">Burger Paty</td>
+                                        <td>12 hour</td>
+                                        <td>8 each</td>
+                                        <td>7</td>
+                                        <td class="hidden-xs hidden-sm hidden-md"></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><input type="checkbox" value="done"></td>
+                                        <td>2</td>
+                                        <td class="emphasis-column all-caps">LC House Salad</td>
+                                        <td>48 hour</td>
+                                        <td>1 each</td>
+                                        <td>7</td>
+                                        <td class="hidden-xs hidden-sm hidden-md"></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><input type="checkbox" value="done"></td>
+                                        <td>2</td>
+                                        <td class="emphasis-column all-caps">Avo Dice</td>
+                                        <td>3 hour</td>
+                                        <td>1 each</td>
+                                        <td>7</td>
+                                        <td class="hidden-xs hidden-sm hidden-md"></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><input type="checkbox" value="done"></td>
+                                        <td>2</td>
+                                        <td class="emphasis-column all-caps">Avo Sliced</td>
+                                        <td>6 hour</td>
+                                        <td>1 each</td>
+                                        <td>7</td>
+                                        <td class="hidden-xs hidden-sm hidden-md"></td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div><!-- end col -->
                 </div>
                 <!-- end row -->
+
+
+
 
 				<!-- Footer -->
 				                <!-- Footer -->
@@ -421,7 +429,8 @@
         <script src="assets/js/jquery.blockUI.js"></script>
         <script src="assets/js/waves.js"></script>
         <script src="assets/js/wow.min.js"></script>
-        <script src="assets/js/jquery.nicescroll.js"></script>
+        <!-- This appears to be html, not js
+        <script src="assets/js/jquery.nicescroll.js"></script> -->
         <script src="assets/js/jquery.scrollTo.min.js"></script>
 
         <!-- Datatables-->
@@ -429,7 +438,8 @@
         <script src="assets/plugins/datatables/dataTables.bootstrap.js"></script>
         <script src="assets/plugins/datatables/dataTables.buttons.min.js"></script>
         <script src="assets/plugins/datatables/buttons.bootstrap.min.js"></script>
-        <script src="assets/plugins/datatables/jszip.min.js"></script>
+        <!-- this is throwin an error saying a module is missing
+        <script src="assets/plugins/datatables/jszip.min.js"></script> -->
         <script src="assets/plugins/datatables/pdfmake.min.js"></script>
         <script src="assets/plugins/datatables/vfs_fonts.js"></script>
         <script src="assets/plugins/datatables/buttons.html5.min.js"></script>
@@ -441,18 +451,28 @@
         <script src="assets/plugins/datatables/dataTables.scroller.min.js"></script>
         <script src="assets/plugins/datatables/dataTables.select.min.js"></script>
 
-        <!-- Datatable initialization -->
-        <script src="assets/pages/print_labels.js"></script>
+        <!-- Datatable init js -->
+        <script src="assets/pages/datatables.init.js"></script>
 
         <!-- App js -->
         <script src="assets/js/jquery.core.js"></script>
         <script src="assets/js/jquery.app.js"></script>
 
         <script type="text/javascript">
+            $(document).ready(function() {
+                $('#on-hand-table').dataTable({
+                    "autoWidth": false,
+                    "buttons": [],
+                    "order": [[ 2, "asc" ]],
+                    "columnDefs": [
+                        {"orderable": false, "targets": [0, 6]},
+                        {"width": "40%", "targets": 6}
+                    ]
+                });
+            });
             TableManageButtons.init();
+
         </script>
-
-
 
     </body>
 
