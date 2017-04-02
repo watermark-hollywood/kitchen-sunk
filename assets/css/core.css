@@ -144,7 +144,7 @@ a:focus {
   font-weight: 400;
   margin-bottom: 0px;
   margin-top: 0px;
-  line-height: 40px;
+  line-height: 24px;
 }
 
 
@@ -957,6 +957,15 @@ textarea.form-control {
 .table > .tfood > tr > th.middle-align {
   vertical-align: middle;
 }
+
+.table > tbody > tr > td {
+  padding: 2px 8px;
+}
+
+.table > tbody > tr > td {
+  vertical-align: middle;
+}
+
 .list-group-item.active,
 .list-group-item.active:hover,
 .list-group-item.active:focus {
