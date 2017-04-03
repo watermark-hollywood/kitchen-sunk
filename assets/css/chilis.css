@@ -228,6 +228,14 @@ hr {
 }
 
 /* Margin and Padding classes (bootstrap 4 emulating) */
+.mt-0, .my-0 {
+	margin-top: 0px;
+}
+
+.mb-0, .my-0 {
+	margin-bottom: 0px;
+}
+
 .mt-8, .my-8 {
 	margin-top: 8px;
 }
@@ -242,6 +250,14 @@ hr {
 
 .mb-10, .my-10 {
 	margin-bottom: 10px;
+}
+
+.mt-12, .my-12 {
+	margin-top:12px;
+}
+
+.mb-12, .my-12 {
+	margin-bottom: 12px;
 }
 
 .mt-14, .my-14 {
@@ -268,19 +284,19 @@ hr {
 	margin-bottom: 20px;
 }
 
-.pl-5, .px-5 {
+.pl-5 {
 	padding-left: 5px;
 }
 
-.pl-10, .px-10 {
+.pl-10 {
 	padding-left: 10px;
 }
 
-.pr-5, .px-5 {
+.pr-5 {
 	padding-right: 5px;
 }
 
-.pr-10, .px-5 {
+.pr-10 {
 	padding-right: 10px;
 }
 
