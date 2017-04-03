@@ -131,22 +131,6 @@ a:focus {
 }
 
 /* Page titles */
-.page-title {
-  color: #5C5C5C;
-  font-family: 'Nunito', sans-serif;
-  font-size: 30px;
-  font-weight: bold;
-  line-height: 36px;
-}
-
-.page-subtitle {
-  font-size: 20px;
-  font-weight: 400;
-  margin-bottom: 0px;
-  margin-top: 0px;
-  line-height: 24px;
-}
-
 
 .page-header {
   border-bottom: 1px solid #DBDDDE;
@@ -1221,10 +1205,10 @@ pre {
   .topbar-left,
   .hidden-print,
   .breadcrumb,
-  .page-title,
   .footer,
   #topnav,
-  .btn-custom {
+  .btn-custom,
+  .no-print {
     display: none;
     margin: 0px;
     padding: 0px;

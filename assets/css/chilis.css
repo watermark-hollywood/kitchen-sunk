@@ -55,102 +55,114 @@ hr {
 	color: #FFCC00 !important;
 }
 
+.lt-grey {
+	color: #979797;
+}
+
+.dk-grey {
+	color: #5C5C5C;
+}
+
 .all-caps {
 	text-transform: uppercase;
+}
+
+.capitalize {
+	text-transform: capitalize;
 }
 
 .a-50 {
 	opacity: .5;
 }
 
-.today-date {
+
+.align-right {
+	text-align: right;
+}
+
+.align-center {
+	text-align: center;
+}
+
+.align-left {
+	text-align: left;
+}
+
+
+
+/* FONT STYLES */
+
+.nunito {
 	font-family: 'Nunito', sans-serif;
+}
+
+.px-48 {
 	font-size: 48px;
-	font-weight: 700;
 	line-height: 56px;
 }
 
-.page-title, .large-metric {
-	color: #5C5C5C;
-	font-family: 'Nunito', sans-serif;
+.px-30 {
 	font-size: 30px;
-	font-weight: bold;
 	line-height: 36px;
 }
 
-.page-subtitle, .today-month, .today-day {
-	color: #979797;	
-	font-family: "Nunito", sans-serif;	
-	font-weight: 300;
-	font-size: 24px;	
+.px-24 {
+	font-size: 24px;
 	line-height: 28px;
 }
 
-.today-day {
-	font-weight: 700;
+.px-20 {
+	font-size: 20px;
+	line-height: 24px;
 }
 
-.small-metric, .print-sheet-link {
-	font-family: 'Nunito', sans-serif;
+.px-18 {
+	font-size: 18px;
+	line-height: 22px;
+}
+
+.px-16 {
+	font-size: 16px;
+	line-height: 19px;
+}
+
+.px-12 {
 	font-size: 12px;
-	line-height: 16px;
+	line-height: 14px;
+}
+
+.px-10 {
+	font-size: 10px;
+	line-height: 12px;
+}
+
+.px-8 {
+	font-size: 8px;
+	line-height: 10px;
+}
+
+.w-300 {
+	font-weight: 300;
+}
+
+.w-400 {
+	font-weight: 400;
+}
+
+.w-500 {
+	font-weight: 500;
+}
+
+.w-700 {
+	font-weight: 700;
 }
 
 .print-sheet-link {
-	font-weight: 700;
 	text-decoration: none;
 }
 
 .print-sheet-link:hover {
 	text-decoration: underline;
-}
-
-.job-title, .report-title {
-	color: #5c5c5c;
-	font-family: "Nunito", sans-serif;	
-	font-size: 8px;	
-	font-weight: 500;	
-	line-height: 12px;	
-	text-transform: uppercase;
-}
-
-.schedule-panel-text {
-	color: #5c5c5c;
-	font-family: "Nunito", sans-serif;	
-	font-size: 10px;	
-	font-weight: 500;	
-	line-height: 14px;	
-}
-
-.job-title {
-	text-align: right;
-}
-
-.employee-name {
-	color: #5D9732;	
-	font-family: "Nunito", sans-serif;	
-	font-size: 18px;	
-	line-height: 26px;	
-	text-align: right;
-	font-weight: 300;
-}
-
-.section-title, .medium-metric {
-	color: #5C5C5C;
-	font-family: 'Nunito', sans-serif;
-	font-size: 20px;
-	font-weight: bold;
-	line-height: 24px;
-	text-transform: capitalize;
-}
-
-.panel-title {
-	color: #5C5C5C;
-	font-family: 'Nunito', sans-serif;
-	font-size: 16px;
-	font-weight: bold;
-	line-height: 19px;
-	text-transform: capitalize;
 }
 
 .title-buttons {
@@ -216,6 +228,13 @@ hr {
 }
 
 /* Margin and Padding classes (bootstrap 4 emulating) */
+.mt-8, .my-8 {
+	margin-top: 8px;
+}
+
+.mb-8, .my-8 {
+	margin-bottom: 8px;
+}
 
 .mt-10, .my-10 {
 	margin-top:10px;
@@ -223,6 +242,14 @@ hr {
 
 .mb-10, .my-10 {
 	margin-bottom: 10px;
+}
+
+.mt-14, .my-14 {
+	margin-top: 14px;
+}
+
+.mb-14, .my-14 {
+	margin-bottom: 14px;
 }
 
 .mt-15, .my-15 {
@@ -264,20 +291,44 @@ hr {
 	box-shadow: 0 2px 4px 0 rgba(204,204,204,0.49);
 }
 
-.form-label {
-	color: #5C5C5C;
-	font-family: 'Nunito', sans-serif;
-	font-size: 12px;
-	font-weight: 500;
-	line-height: 14px;
-	text-transform: uppercase;
-	margin-top: 14px;
-	margin-bottom: 8px;
-}
-
 .dashboard-icon{
 	font-size: 75px;
 }
+
+/* DATATABLES STYLES */
+.dt-buttons {
+	display: none;
+}
+
+div.dataTables_filter {
+	text-align: right;
+}
+
+th {
+	border: none;
+	font-family: "Nunito", sans-serif;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 8px;
+}
+
+tr td {
+		color: #5C5C5C;	
+		font-family: "Nunito", sans-serif;	
+		font-size: 10px;	
+		font-weight: 300;	
+		line-height: 11px;
+}
+
+tr td.emphasis-column {
+		color: #5D9732;	
+		font-family: "Nunito", sans-serif;	
+		font-size: 12px;	
+		font-weight: 700;	
+		line-height: 15px;
+}
+/* END DATATABLES STYLES */
+
 
 @media (max-width: 767px){
 
@@ -287,10 +338,10 @@ hr {
 	    padding-left: 15px;
 	    padding-right: 15px;
 	}
-	.job-title {
+	.nunito px-8 w-500 dk-grey all-caps {
 		text-align: left;
 	}
-	.employee-name{
+	.nunito px-18 w-300 green align-right{
 		text-align: left;
 	}
 }
