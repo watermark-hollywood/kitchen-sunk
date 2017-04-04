@@ -228,7 +228,7 @@ hr {
 }
 
 .x-button {
-	min-width: 40px;
+	width: 40px;
 }
 
 /* Margin and Padding classes (bootstrap 4 emulating) */
@@ -293,6 +293,14 @@ hr {
 }
 
 .mb-17, .my-17 {
+	margin-bottom: 17px;
+}
+
+.mt-19, .my-19 {
+	margin-top: 19px;
+}
+
+.mb-19, .my-19 {
 	margin-bottom: 17px;
 }
 
