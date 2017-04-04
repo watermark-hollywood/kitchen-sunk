@@ -1,0 +1,604 @@
+
+
+<!DOCTYPE html>
+<html>
+    
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Brinker KitchenSYNC is the ultimate Culinary Management system used by Chilis Restaurants">
+        <meta name="author" content="Watermark Digital">
+
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <title>KitchenSYNC - Brinker Restaurant Management System</title>
+
+        <!-- DataTables -->
+        <link href="assets/plugins/datatables/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/plugins/datatables/buttons.bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/plugins/datatables/fixedHeader.bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/plugins/datatables/responsive.bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/plugins/datatables/scroller.bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/core.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/components.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/pages.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/menu.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/chilis.css" rel="stylesheet" type="text/css" />
+
+        <!-- HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="assets/js/modernizr.min.js"></script>
+
+    </head>
+
+
+    <body>
+
+        <!-- BEGIN Navigation Bar-->
+        <header id="topnav">
+
+            <!-- Top Bar and Navigation -->
+                        <div class="topbar-main">
+                <div class="container">
+
+                    <!-- LOGO -->
+                    <div class="topbar-left">
+                        
+                        <a href="#" class="logo">
+                            <img src="assets/images/ks_logo.png">   
+                        </a>
+                    </div>
+                    <!-- End Logo container-->
+
+
+                    <div class="menu-extras">
+
+                        <ul class="nav navbar-nav navbar-right pull-right">
+                            <li>
+                                <!-- Notification -->
+                                <div class="notification-box">
+                                    <ul class="list-inline m-b-0">
+                                        <li>
+                                            <a href="javascript:void(0);" class="right-bar-toggle">
+                                                <i class="zmdi zmdi-notifications-none"></i>
+                                            </a>
+                                            <div class="noti-dot">
+                                                <span class="dot"></span>
+                                                <span class="pulse"></span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- End Notification bar -->
+                            </li>
+
+                            <li class="dropdown user-box">
+                                <a href="#" class="dropdown-toggle waves-effect waves-light profile " data-toggle="dropdown" aria-expanded="true">
+                                    <img src="assets/images/avatar_kasey.jpg" alt="user-img" class="img-circle user-img">
+                                    <div class="user-status away"><i class="zmdi zmdi-dot-circle"></i></div>
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <li><a href="javascript:void(0)"><i class="ti-user m-r-5"></i> Profile</a></li>
+                                    <li><a href="javascript:void(0)"><i class="ti-settings m-r-5"></i> Settings</a></li>                                    
+                                    <li><a href="javascript:void(0)"><i class="ti-power-off m-r-5"></i> Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="menu-item">
+                            <!-- Mobile menu toggle-->
+                            <a class="navbar-toggle">
+                                <div class="lines">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </a>
+                            <!-- End mobile menu toggle-->
+                        </div>
+                    </div>
+
+                </div>
+            </div>            <div class="navbar-custom">
+                <div class="container">
+                    <div id="navigation">
+                        <!-- Navigation Menu-->
+                        <ul class="navigation-menu">
+
+                            <li class="has-submenu">
+                                <a href="#"><i class="zmdi zmdi-home"></i> <span> Home </span> </a>
+                                <ul class="submenu megamenu">
+                                    <li>
+                                        <ul>
+                                            <li><a href="#">Announcements</a></li>
+                                            <li><a href="#">Calendar</a></li>
+                                            <li><a href="#">Tasks</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="has-submenu">
+                                <a href="#"><i class="zmdi zmdi-collection-text"></i><span> Menu </span> </a>
+                                <ul class="submenu">
+                                    <li><a href="#">Menu Recipes</a></li>
+                                    <li><a href="#">Prep Items</a></li>
+                                    <li><a href="#">Ingredients</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="has-submenu">
+                                <a href="#"><i class="zmdi zmdi-cutlery"></i> <span> Restaurants </span> </a>
+                                <ul class="submenu">
+                                    <li><a href="#">Daily Sheets</a></li>
+                                    <li><a href="#">Truck Schedules</a></li>
+                                    <li><a href="#">Prep Labels</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="#"><i class="zmdi zmdi-file-text"></i> <span> Reports </span> </a>
+                            </li>
+
+
+
+
+
+                            <li class="has-submenu">
+                                <a href="#"><i class="zmdi zmdi-print"></i><span>Print Sheets </span> </a>
+                                <ul class="submenu megamenu">
+                                    <li>
+                                        <ul>
+                                            <li><a href="#">On Hand Count</a></li>
+                                            <li><a href="#">Pull Thaw</a></li>
+                                            <li><a href="#">Prep List</a></li>
+                                            <li><a href="#">Add From Brad</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="#">Bar Prep</a></li>
+                                            <li><a href="#">Portions</a></li>
+                                            <li><a href="#">Line Check</a></li>
+                                            <li><a href="#">Add From Brad</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                        <!-- End navigation menu  -->
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- END Navigation Bar-->
+
+
+        <div class="wrapper">
+            <div class="container">
+            
+            <!-- TITLE ROW AND BUTTONS -->
+            <div class="row title-row">
+                <div class="col-xs-12 col-sm-7">
+                    <h1 class="nunito px-30 w-700 dk-grey">Ingredient Profile</h1> 
+                </div>
+                <div class="col-xs-12 col-sm-5">
+                    <div class="row title-buttons">
+                        <div class="col-xs-12 col-sm-3 col-lg-4 pr-10">
+                            <button type="button" class="btn btn-lg btn-green">Save</button>
+                        </div>
+                        <div class="col-xs-12 col-sm-5 col-lg-4 px-10">
+                            <button type="button" class="btn btn-lg btn-green">Save as draft</button>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-lg-4 pl-10">
+                            <button type="button" class="btn btn-lg btn-white">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END TITLE ROW AND BUTTONS -->
+
+            <!-- BEGIN BODY CONTENT -->
+            <div class="row mt-20">
+                <div class="col-md-3">
+                    <!-- INGREDIENT DETAILS PANEL -->
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <h3 class="nunito px-16 w-700 dk-grey all-caps mt-0">Menu Item Detail</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                  <div class="form-group mb-0">
+                                    <label class="nunito px-12 w-500 dk-grey all-caps mb-8 mt-14" for="menu-item-name">Menu Item Name (LONG):</label>
+                                    <input type="text" class="form-control" id="menu-item-name" name="menu-item-name" placeholder="Input value" required="true">
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                  <div class="form-group mb-0">
+                                    <label class="nunito px-12 w-500 dk-grey all-caps mb-8 mt-14" for="menu-item-short-name">Short Name:</label>
+                                    <input type="text" class="form-control" id="menu-item-short-name" name="menu-item-short-name" placeholder="Input value" required="true">
+                                  </div>
+                                </div>
+                                <div class="col-sm-6">
+                                  <div class="form-group mb-0">
+                                    <label class="nunito px-12 w-500 dk-grey all-caps mb-8 mt-14" for="menu-item-plu">PLU#:</label>
+                                    <input type="text" class="form-control" id="menu-item-plu" name="menu-item-plu" placeholder="Input value" required="true">
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                  <div class="form-group mb-0">
+                                    <label class="nunito px-12 w-500 dk-grey all-caps mb-8 mt-14" for="menu-item-category">Menu Category:</label>
+                                    <select class="form-control" id="menu-item-category" name="menu-item-category" required>
+                                      <option>Select Option</option>
+                                      <!-- Options -->
+                                    </select>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                  <div class="form-group mb-0">
+                                    <label class="nunito px-12 w-500 dk-grey all-caps mb-8 mt-14" for="menu-item-food-category">Food Category:</label>
+                                    <select class="form-control" id="menu-item-food-category" name="menu-item-food-category" required>
+                                      <option>Select Option</option>
+                                      <!-- Options -->
+                                    </select>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                  <div class="form-group mb-0">
+                                    <label class="nunito px-12 w-500 dk-grey all-caps mb-8 mt-14" for="menu-item-zone">Zone:</label>
+                                    <select class="form-control" id="menu-item-zone" name="menu-item-zone" required>
+                                      <option>Select Option</option>
+                                      <!-- Options -->
+                                    </select>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END INGREDIENT DETAILS PANEL -->
+                </div>
+                <div class="col-md-3">
+                    <!-- VISUAL DETAILS PANEL -->
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <h3 class="nunito px-16 w-700 dk-grey all-caps mt-0">Visual Reference &amp; Training</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                  <div class="form-group mb-0">
+                                    <label class="nunito px-12 w-500 dk-grey all-caps mb-8 mt-14" for="menu-item-zone">Quality Control Points:</label>
+                                    <textarea class="form-control" rows="3" id="menu-item-points" name="menu-item-points"></textarea>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <label class="nunito px-12 w-500 dk-grey all-caps mb-0 mt-14">Presentation Images:</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <label class="nunito px-8 w-500 dk-grey all-caps mb-8 mt-0" for="menu-item-dine-in">Dine-In:</label>
+                                    <div class="panel panel-default mb-5">
+                                        <div class="panel-body text-center pt-5 pb-10">
+                                            <i class="fa fa-plus-circle lt-grey px-48 a-50"></i>
+                                            <p class="nunito px-10 lt-grey all-caps a-50">Image</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="nunito px-8 w-500 dk-grey all-caps mb-8 mt-0" for="menu-item-to-go">To-Go:</label>
+                                    <div class="panel panel-default mb-5">
+                                        <div class="panel-body text-center pt-5 pb-10">
+                                            <i class="fa fa-plus-circle lt-grey px-48 a-50"></i>
+                                            <p class="nunito px-10 lt-grey all-caps a-50">Image</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                  <div class="form-group mb-0">
+                                    <label class="nunito px-12 w-500 dk-grey all-caps mb-8 mt-14" for="menu-item-video-link">Cooking Video:</label>
+                                    <input type="text" class="form-control" id="menu-item-video-link" name="menu-item-video-link" placeholder="Input value (link)" required="true">
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END VISUAL DETAILS PANEL -->
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <!-- EQUIPMENT AND COOKING DETAILS PANEL -->
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <h3 class="nunito px-16 w-700 dk-grey all-caps mt-0">Equipment and Cooking Details:</h3>
+                            <!-- COOKING DETAIL ROW -->
+                            <div class="row">
+                                <div class="col-xs-12 mb-8">
+                                    <div class="row">
+                                        <div class="col-xs-1 pr-5 pt-15 mt-5">
+                                            <button type="button" class="btn btn-red pl-5 pr-5 x-button"><i class="fa fa-times"></i></button>
+                                        </div>
+                                        <div class="col-xs-7 pl-5 pr-5">
+                                            <label class="nunito px-12 w-500 dk-grey all-caps mb-0 mt-5" for="prep-recipe-equipment-step-1-equipment-select">Equipment:</label>
+                                            <select class="form-control" id="prep-recipe-equipment-step-1-equipment-select" name="prep-recipe-equipment-step-1-equipment-select" required>
+                                                <option>Select Option</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-xs-2 pl-5 pr-5">
+                                            <label class="nunito px-12 w-500 dk-grey all-caps mb-0 mt-5" for="prep-recipe-equipment-step-1-equipment-time">Time:</label>
+                                            <input type="text" class="form-control" id="prep-recipe-equipment-step-1-equipment-time" name="prep-recipe-equipment-step-1-equipment-time" placeholder="00">
+                                        </div>
+                                        <div class="col-xs-2 pl-5 text-center">
+                                            <label class="nunito px-12 w-500 dk-grey all-caps mb-0 mt-5" for="prep-recipe-equipment-step-1-equipment-primary">Primary</label>
+                                            <div class="row mt-5 text-center">
+                                                <input type="radio" name="prep-recipe-equipment-step-1-equipment-primary mt-5" id="step1-radio" value="yes" checked="true">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END COOKING DETAIL ROW -->
+                            <hr/>
+                            <!-- COOKING DETAIL ROW -->
+                            <div class="row">
+                                <div class="col-xs-12 mb-8">
+                                    <div class="row">
+                                        <div class="col-xs-1 pr-5 pt-15 mt-5">
+                                            <button type="button" class="btn btn-red pl-5 pr-5 x-button"><i class="fa fa-times"></i></button>
+                                        </div>
+                                        <div class="col-xs-7 pl-5 pr-5">
+                                            <label class="nunito px-12 w-500 dk-grey all-caps mb-0 mt-5" for="prep-recipe-equipment-step-1-equipment-select">Equipment:</label>
+                                            <select class="form-control" id="prep-recipe-equipment-step-1-equipment-select" name="prep-recipe-equipment-step-1-equipment-select" required>
+                                                <option>Select Option</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-xs-2 pl-5 pr-5">
+                                            <label class="nunito px-12 w-500 dk-grey all-caps mb-0 mt-5" for="prep-recipe-equipment-step-1-equipment-time">Time:</label>
+                                            <input type="text" class="form-control" id="prep-recipe-equipment-step-1-equipment-time" name="prep-recipe-equipment-step-1-equipment-time" placeholder="00">
+                                        </div>
+                                        <div class="col-xs-2 pl-5 text-center">
+                                            <label class="nunito px-12 w-500 dk-grey all-caps mb-0 mt-5" for="prep-recipe-equipment-step-1-equipment-primary">Primary</label>
+                                            <div class="row mt-5 text-center">
+                                                <input type="radio" name="prep-recipe-equipment-step-1-equipment-primary mt-5" id="step1-radio" value="yes" >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END COOKING DETAIL ROW -->
+                            <hr/>
+                            <!-- COOKING DETAIL ROW -->
+                            <div class="row">
+                                <div class="col-xs-12 mb-8">
+                                    <div class="row">
+                                        <div class="col-xs-1 pr-5 pt-15 mt-5">
+                                            <button type="button" class="btn btn-red pl-5 pr-5 x-button"><i class="fa fa-times"></i></button>
+                                        </div>
+                                        <div class="col-xs-7 pl-5 pr-5">
+                                            <label class="nunito px-12 w-500 dk-grey all-caps mb-0 mt-5" for="prep-recipe-equipment-step-1-equipment-select">Equipment:</label>
+                                            <select class="form-control" id="prep-recipe-equipment-step-1-equipment-select" name="prep-recipe-equipment-step-1-equipment-select" required>
+                                                <option>Select Option</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-xs-2 pl-5 pr-5">
+                                            <label class="nunito px-12 w-500 dk-grey all-caps mb-0 mt-5" for="prep-recipe-equipment-step-1-equipment-time">Time:</label>
+                                            <input type="text" class="form-control" id="prep-recipe-equipment-step-1-equipment-time" name="prep-recipe-equipment-step-1-equipment-time" placeholder="00">
+                                        </div>
+                                        <div class="col-xs-2 pl-5 text-center">
+                                            <label class="nunito px-12 w-500 dk-grey all-caps mb-0 mt-5" for="prep-recipe-equipment-step-1-equipment-primary">Primary</label>
+                                            <div class="row mt-5 text-center">
+                                                <input type="radio" name="prep-recipe-equipment-step-1-equipment-primary mt-5" id="step1-radio" value="yes" >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END COOKING DETAIL ROW -->
+                            <hr/>
+                            <div class="row">
+                                <div class="col-sm-6 col-md-4">
+                                    <button type="button" class="btn btn-green">+ Add Equipment</i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END EQUIPMENT AND COOKING DETAILS PANEL -->
+                    <!-- LABOR TIME PANEL -->
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <h3 class="nunito px-16 w-700 dk-grey all-caps mt-0">Labor Time (MIN):</h3>
+                                    <div class="row">
+                                        <div class="col-xs-4">
+                                            <label class="nunito px-8 w-500 dk-grey all-caps mb-0 mt-5" for="prep-recipe-labor-direct">Direct</label>
+                                            <input type="text" class="form-control" id="prep-recipe-labor-direct" name="prep-recipe-labor-direct" placeholder="00">
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <label class="nunito px-8 w-500 dk-grey all-caps mb-0 mt-5" for="prep-recipe-labor-indirect">Indirect</label>
+                                            <input type="text" class="form-control" id="prep-recipe-labor-indirect" name="prep-recipe-labor-indirect" placeholder="00">
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <label class="nunito px-8 w-500 dk-grey all-caps mb-0 mt-5" for="prep-recipe-cycle-time">Cycle Time</label>
+                                            <input type="text" class="form-control" id="prep-recipe-cycle-time" name="prep-recipe-cycle-time" placeholder="00">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END LABOR TIME PANEL -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-7">
+                    <h2 class="nunito px-20 w-700 dk-grey capitalize">Ingredients &amp; Prep Items:</h2>
+                </div>
+                <div class="col-xs-12 col-sm-5">
+                    <div class="row title-buttons">
+                        <div class="col-xs-12 col-sm-6 col-sm-offset-6 col-lg-4 col-lg-offset-8 pl-10">
+                            <button type="button" class="btn btn-white"><span class="glyphicon glyphicon-refresh" aria-hidden="true"></span> Refresh</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PREP ITEM ROW (foreach) -->
+            <div class="row mt-20">
+                <div class="col-xs-12">
+                    <!-- PREP ITEM PANEL -->
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="row mb-10">
+                                        <div class="col-md-1 col-sm-2 col-xs-3">
+                                            <button type="button" class="btn btn-red mt-19 x-button"><i class="fa fa-times"></i></button>
+                                        </div>
+                                        <div class="col-md-2 col-sm-2 col-xs-9">
+                                            <label class="nunito px-12 w-500 dk-grey all-caps mb-0 mt-5" for="prep-item-count-1">Step #:</label>
+                                            <input type="text" class="form-control" id="prep-procedure-step-1" name="prep-procedure-step-1" placeholder="00">
+                                        </div>
+                                        <div class="col-md-5 col-sm-4">
+                                            <label class="nunito px-12 w-500 dk-grey all-caps mb-0 mt-5" for="prep-item-type-1">Item Type:</label>
+                                            <select class="form-control" id="prep-item-type-1" name="prep-item-type-1" required>
+                                              <option>Select Option</option>
+                                              <!-- Options -->
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4">
+                                            <label class="nunito px-12 w-500 dk-grey all-caps mb-0 mt-5" for="prep-item-type-1">Item Name:</label>
+                                            <input type="text" class="form-control" id="prep-item-name-1" name="prep-item-name-1" placeholder="Input value">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                        <label class="nunito px-12 w-500 dk-grey all-caps mb-0" for="prep-item-qty-1">QTY / MEASURE :</label>
+                                            <div class="row">
+                                                <div class="col-xs-3 pr-0">
+                                                    <input type="text" class="form-control" id="prep-item-qty-1" name="prep-item-qty-1" placeholder="00">
+                                                </div>
+                                                <div class="col-xs-9 pl-10">
+                                                    <select class="form-control" id="prep-item-qty-uom-1" name="prep-item-qty-uom-1" required>
+                                                      <option>UOM</option>
+                                                      <!-- Options -->
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <label class="nunito px-12 w-500 dk-grey all-caps mb-0 mt-5" for="menu-item-prep-note-1">Note:</label>
+                                                    <input type="text" class="form-control" id="menu-item-prep-note-1" name="menu-item-prep-note-1" placeholder="Text area content">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <hr />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-5">
+                                    <div class="row title-buttons">
+                                        <div class="col-xs-12 col-sm-6 col-lg-4">
+                                            <button type="button" class="btn btn-green">+ Add Existing</button>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6 col-lg-4">
+                                            <button type="button" class="btn btn-green">+ Create New</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END PREP ITEM PANEL -->
+                </div>
+            </div>
+            <!-- END PREP ITEM ROW -->
+        </div>
+        <!-- jQuery  -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/detect.js"></script>
+        <script src="assets/js/fastclick.js"></script>
+        <script src="assets/js/jquery.slimscroll.js"></script>
+        <script src="assets/js/jquery.blockUI.js"></script>
+        <script src="assets/js/waves.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <!-- This appears to be html, not js
+        <script src="assets/js/jquery.nicescroll.js"></script> -->
+        <script src="assets/js/jquery.scrollTo.min.js"></script>
+
+        <!-- Datatables-->
+        <script src="assets/plugins/datatables/jquery.dataTables.min.js"></script>
+        <script src="assets/plugins/datatables/dataTables.bootstrap.js"></script>
+        <script src="assets/plugins/datatables/dataTables.buttons.min.js"></script>
+        <script src="assets/plugins/datatables/buttons.bootstrap.min.js"></script>
+        <!-- this is throwin an error saying a module is missing
+        <script src="assets/plugins/datatables/jszip.min.js"></script> -->
+        <script src="assets/plugins/datatables/pdfmake.min.js"></script>
+        <script src="assets/plugins/datatables/vfs_fonts.js"></script>
+        <script src="assets/plugins/datatables/buttons.html5.min.js"></script>
+        <script src="assets/plugins/datatables/buttons.print.min.js"></script>
+        <script src="assets/plugins/datatables/dataTables.fixedHeader.min.js"></script>
+        <script src="assets/plugins/datatables/dataTables.keyTable.min.js"></script>
+        <script src="assets/plugins/datatables/dataTables.responsive.min.js"></script>
+        <script src="assets/plugins/datatables/responsive.bootstrap.min.js"></script>
+        <script src="assets/plugins/datatables/dataTables.scroller.min.js"></script>
+        <script src="assets/plugins/datatables/dataTables.select.min.js"></script>
+
+        <!-- Datatable init js -->
+        <script src="assets/pages/datatables.init.js"></script>
+
+        <!-- App js -->
+        <script src="assets/js/jquery.core.js"></script>
+        <script src="assets/js/jquery.app.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#on-hand-table').dataTable({
+                    "autoWidth": false,
+                    "buttons": [],
+                    "order": [[ 2, "asc" ]],
+                    "columnDefs": [
+                        {"orderable": false, "targets": 0}
+                    ]
+                });
+
+
+                $(".btn-day-toggle").click(function(){
+                    $(this).toggleClass("btn-white"); //Adds 'a', removes 'b'
+                });
+            });
+            TableManageButtons.init();
+
+        </script>
+
+    </body>
+
+</html>
