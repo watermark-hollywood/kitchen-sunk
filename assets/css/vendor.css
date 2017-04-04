@@ -1,0 +1,141 @@
+/* ---------------------------------------------------------------------------------
+//  FILENAME:      vendor.css
+//
+//  DESCRIPTION:   client customization stylesheet
+//
+//  NOTES:         General styles for entire look and feel
+//
+//  COPYRIGHTS:    Copyright (c) Watermark Digital 2017
+//                 All Rights Reserved
+//
+//  HISTORY:
+//
+//    MM/DD/YY  WHO     NOTES
+// ---------------------------------------------------------------------------------
+//    04/01/17  JC     Created this file
+// ---------------------------------------------------------------------------------
+*/
+
+/* Global */
+
+a, a:active, a:focus {
+  color: #60953c;
+}
+a:hover {
+  color: #c4d69e;
+}
+.icon-addon {
+    position: relative;
+    color: #555;
+    display: block;
+}
+.icon-addon:before {
+    display: table;
+    content: " ";
+}
+
+.icon-addon.addon-lg .form-control {
+    line-height: 1.33;
+    height: 46px;
+    font-size: 18px;
+    padding: 10px 16px 10px 40px;
+}
+
+.icon-addon.addon-md .form-control, .icon-addon .form-control {
+    padding-left: 30px;
+    float: left;
+    font-weight: normal;
+}
+
+.icon-addon.addon-md .glyphicon,
+.icon-addon .glyphicon,
+.icon-addon.addon-md .fa,
+.icon-addon .fa {
+    position: absolute;
+    z-index: 2;
+    left: 10px;
+    font-size: 14px;
+    width: 20px;
+    margin-left: -2.5px;
+    text-align: center;
+    padding: 10px 0;
+    top: 1px;
+}
+.icon-addon.addon-md .fa,
+.icon-addon.addon-md .glyphicon {
+    font-size: 18px;
+    margin-left: 0;
+    top: 1px;
+    right: 11px;
+    left: inherit;
+    color: #d0d0d0;
+}
+
+.search-filter {
+  display: none;
+}
+
+/* Tables */
+.pt-daily .dataTables_filter {
+  clear: right;
+}
+
+.pt-daily-table thead tr th {
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 11px;
+  border-bottom: 2px solid #979797;
+}
+.pt-daily-table thead .first {
+  width: 20%;
+}
+.pt-daily-table thead .second,
+.pt-daily-table thead .third {
+  width: 15%;
+}
+
+.pt-daily-table tbody td:not(:first-child){
+  text-align: center;
+}
+.pt-daily-table tbody td:nth-child(2),
+.pt-daily-table tbody td:nth-child(3) {
+  text-align: left;
+}
+.pt-daily-table tbody td:last-child {
+  border-right: 1px solid #979797;
+}
+.pt-table-btn {
+  float: right;
+  padding: 10px 0 10px;
+}
+
+.highlighted {
+  background-color: #c4d69e;
+  text-align: center;
+  border: 1px solid #979797 !important;
+  border-bottom: 0;
+}
+.highlighted.strong {
+  background-color: #60953c;
+  color: #fff;
+}
+
+.highlighted.lame {
+  background-color: #fff;
+  color: inherit;
+}
+.green {
+  color: #60953c;
+}
+.lite-green {
+  background-color: #f0f3e6;
+  border-left: 1px solid #979797;
+  border-right: 1px solid #979797;
+  text-align: center;
+}
+.marked {
+  background-color: #fffbed;
+  text-align: center;
+  border-left: 1px solid #979797;
+  border-right: 1px solid #979797;
+}
