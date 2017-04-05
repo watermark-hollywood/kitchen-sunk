@@ -548,6 +548,24 @@ tr td.emphasis-column {
 	border-bottom: 1px solid #979797 !important;
 }
 
+.dt-adjust-count tr td:nth-child(n+2){
+	text-align: center;
+	border-left: 1px solid #979797 !important;
+	border-right: 1px solid #979797 !important;
+	padding-right: 8px;
+}
+
+.dt-adjust-count tr td:nth-child(n+2) input{
+	text-align: center;
+	padding: 5px;
+	width: 70px;
+}
+
+.dt-adjust-count tr th:nth-child(n+2){
+	text-align: center;
+	padding-right: 8px;
+}
+
 .dt-pull-thaw tr:nth-child(even) td:nth-child(n+5):nth-child(-n+5) {
     background-color: #f7f9f2;   
 	border-left: 1px solid #979797 !important;
