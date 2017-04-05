@@ -367,6 +367,14 @@ hr {
 	padding-right: 5px;
 }
 
+.pl-8 {
+	padding-left: 8px;
+}
+
+.pr-8 {
+	padding-right: 8px;
+}
+
 .pt-5, .py-5 {
 	padding-top:5px;
 }
@@ -416,7 +424,7 @@ th {
 	font-family: "Nunito", sans-serif;
 	text-transform: uppercase;
 	font-weight: 500;
-	font-size: 8px;
+	font-size: 10px;
 }
 
 tr td {
@@ -502,7 +510,13 @@ tr td.emphasis-column {
   }
 }
 
-/* Pull Thaw Weekly TH Styles */
+/* Data Table Weekly Styles */
+.header-green {
+	background-color: #5D9732;
+	color: #FFF;
+	text-align: center;
+}
+
 .header-dk {
 	background-color: #C4D79B;
 	border: 1px solid #979797 !important;
@@ -516,6 +530,20 @@ tr td.emphasis-column {
 	border-top: 1px solid #979797 !important;
 	border-right: 1px solid #979797 !important;
 	border-bottom: 1px solid #979797 !important;
+}
+
+.dt-pull-thaw tr:nth-child(even) td:nth-child(n+5):nth-child(-n+5) {
+    background-color: #f7f9f2;   
+	border-left: 1px solid #979797 !important;
+	border-right: 1px solid #979797 !important;
+	text-align: center;
+}
+
+.dt-pull-thaw tr:nth-child(odd) td:nth-child(n+5):nth-child(-n+5)  {
+    background-color: #f0f3e5;   
+	border-left: 1px solid #979797 !important;
+	border-right: 1px solid #979797 !important;
+	text-align: center;
 }
 
 .dt-weekly tr:nth-child(even) td:nth-child(n+5):nth-child(even) {
@@ -570,4 +598,14 @@ tr td.emphasis-column {
 	border-right: 1px solid #979797 !important;
 }
 
+.dt-truck-schedule thead > tr > th {
+	padding-left: 8px !important;
+	padding-right: 8px !important;
+}
+
+.dt-truck-schedule tr td:nth-child(n+2) {
+    text-align: center;  
+	border-left: 1px solid #979797 !important;
+	border-right: 1px solid #979797 !important;
+}
 

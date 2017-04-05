@@ -63,6 +63,7 @@
                         </button> 
                         <!-- Collect the nav links, forms, and other content for toggling -->
                           <ul class="nav navbar-nav hidden-xs">
+                            <li class="pl-10"><a class="nunito px-14 ls-1 all-caps" href="#">Home</a></li>
                             <li class="dropdown pl-10">
                               <a href="#" class="dropdown-toggle nunito px-14 ls-1 all-caps" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu <span class="caret"></span></a>
                               <ul class="dropdown-menu">
@@ -161,7 +162,7 @@
 				
                 <div class="row m-t-20">
                     <div class="col-sm-7">
-                        <h1 class="nunito px-30 w-700 dk-grey m-b-0">Pull Thaw</h1>
+                        <h1 class="nunito px-30 w-700 dk-grey m-b-0">Truck Schedules</h1>
                         <h2 class="nunito px-24 w-300 lt-grey">Casa Linda: 7701 - Tuesday, March 14</h2>
                     </div>
                     <div class="col-sm-5">
@@ -187,79 +188,95 @@
                             
 
                             
-                            <table id="on-hand-table" class="table table-striped dt-responsive dt-pull-thaw" cellspacing="0">
+                            <table id="on-hand-table" class="table table-striped dt-responsive dt-truck-schedule" cellspacing="0">
                                 <thead>
                                     <tr>
-                                        <th>Done</th>
                                         <th>Item</th>
-                                        <th>Shelf Life</th>
-                                        <th>Batch Size</th>
-                                        <th class="text-center header-green">Pull By</th>
-                                        <th class="hidden-xs hidden-sm hidden-md"></th>
+                                        <th><button class="btn btn-green btn-sm btn-day-toggle" id="thursday">Thursday</button></th>
+                                        <th><button class="btn btn-green btn-sm btn-day-toggle" id="friday">Friday</button></th>
+                                        <th><button class="btn btn-green btn-sm btn-day-toggle" id="saturday">Saturday</button></th>
+                                        <th><button class="btn btn-green btn-sm btn-day-toggle" id="sunday">Sunday</button></th>
+                                        <th><button class="btn btn-green btn-sm btn-day-toggle" id="monday">Monday</button></th>
+                                        <th><button class="btn btn-green btn-sm btn-day-toggle" id="tuesday">Tuesday</button></th>
+                                        <th><button class="btn btn-green btn-sm btn-day-toggle" id="wednesday">Wednesday</button></th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td><input type="checkbox" value="done"></td>
                                         <td class="emphasis-column all-caps">MPC Kit</td>
-                                        <td>12 hour</td>
-                                        <td>9 portions</td>
-                                        <td><strong>2</strong> pack</td>
-                                        <td class="hidden-xs hidden-sm hidden-md"></td>
+                                        <td><i class="fa fa-check green"></i></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><i class="fa fa-check green"></i></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
                                     </tr>
 
                                     <tr>
-                                        <td><input type="checkbox" value="done"></td>
                                         <td class="emphasis-column all-caps">Car Sal Kit</td>
-                                        <td>18 hour</td>
-                                        <td>9 portions</td>
-                                        <td><strong>1</strong> each</td>
-                                        <td class="hidden-xs hidden-sm hidden-md"></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><i class="fa fa-check green"></i></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
                                     </tr>
 
                                     <tr>
-                                        <td><input type="checkbox" value="done"></td>
                                         <td class="emphasis-column all-caps">Bite Paty</td>
-                                        <td>20 hour</td>
-                                        <td>4 each</td>
-                                        <td><strong>2</strong> pack</td>
-                                        <td class="hidden-xs hidden-sm hidden-md"></td>
+                                        <td><i class="fa fa-check green"></i></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
                                     </tr>
 
                                     <tr>
-                                        <td><input type="checkbox" value="done"></td>
                                         <td class="emphasis-column all-caps">Burger Paty</td>
-                                        <td>12 hour</td>
-                                        <td>8 each</td>
-                                        <td><strong>2</strong> pack</td>
-                                        <td class="hidden-xs hidden-sm hidden-md"></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><i class="fa fa-check green"></i></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
                                     </tr>
 
                                     <tr>
-                                        <td><input type="checkbox" value="done"></td>
                                         <td class="emphasis-column all-caps">LC House Salad</td>
-                                        <td>48 hour</td>
-                                        <td>1 each</td>
-                                        <td><strong>2</strong> pack</td>
-                                        <td class="hidden-xs hidden-sm hidden-md"></td>
+                                        <td><i class="fa fa-check green"></i></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
                                     </tr>
 
                                     <tr>
-                                        <td><input type="checkbox" value="done"></td>
                                         <td class="emphasis-column all-caps">Avo Dice</td>
-                                        <td>3 hour</td>
-                                        <td>1 each</td>
-                                        <td><strong>5</strong> pack</td>
-                                        <td class="hidden-xs hidden-sm hidden-md"></td>
+                                        <td><i class="fa fa-check green"></i></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><i class="fa fa-check green"></i></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
                                     </tr>
 
                                     <tr>
-                                        <td><input type="checkbox" value="done"></td>
                                         <td class="emphasis-column all-caps">Avo Sliced</td>
-                                        <td>6 hour</td>
-                                        <td>1 each</td>
-                                        <td><strong>1</strong> bag</td>
-                                        <td class="hidden-xs hidden-sm hidden-md"></td>
+                                        <td><i class="fa fa-check green"></i></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><i class="fa fa-check green"></i></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
                                     </tr>
 
                                 </tbody>
@@ -425,12 +442,20 @@
                 $('#on-hand-table').dataTable({
                     "autoWidth": false,
                     "buttons": [],
-                    "order": [[ 1, "asc" ]],
+                    "order": [[ 0, "asc" ]],
                     "columnDefs": [
-                        {"orderable": false, "targets": [0, 5]},
-                        {"width": "40%", "targets": 5}
+                        {"orderable": false, "targets": [1, 2, 3, 4, 5, 6, 7]}
                     ]
                 });
+
+                $(".btn-day-toggle").click(function(){
+                    $(this).toggleClass("btn-white"); //Adds 'a', removes 'b'
+                });
+                $('#friday').click();
+                $('#saturday').click();
+                $('#monday').click();
+                $('#tuesday').click();
+                $('#wednesday').click();
             });
             TableManageButtons.init();
 
