@@ -520,38 +520,54 @@ tr td.emphasis-column {
 
 .dt-weekly tr:nth-child(even) td:nth-child(n+5):nth-child(even) {
     background-color: #f7f9f2;   
+	border-left: 1px solid #979797 !important;
+	border-right: 1px solid #979797 !important;
 }
 
 .dt-weekly tr:nth-child(even) td:nth-child(n+5):nth-child(odd) {
     background-color: #f0f3e5;   
+	border-left: 1px solid #979797 !important;
+	border-right: 1px solid #979797 !important;
 }
 
 .dt-weekly tr:nth-child(odd) td:nth-child(n+5):nth-child(even) {
     background-color: #ffffff;   
+	border-left: 1px solid #979797 !important;
+	border-right: 1px solid #979797 !important;
 }
 
 .dt-weekly tr:nth-child(odd) td:nth-child(n+5):nth-child(odd) {
     background-color: #f7f9f1;   
+	border-left: 1px solid #979797 !important;
+	border-right: 1px solid #979797 !important;
 }
 
 .dt-master-prep tr:nth-child(even) td:nth-child(n+9):nth-child(even) {
     background-color: #f7f9f2; 
     text-align: center;  
+	border-left: 1px solid #979797 !important;
+	border-right: 1px solid #979797 !important;
 }
 
 .dt-master-prep tr:nth-child(even) td:nth-child(n+9):nth-child(odd) {
     background-color: #f0f3e5;   
     text-align: center;
+	border-left: 1px solid #979797 !important;
+	border-right: 1px solid #979797 !important;
 }
 
 .dt-master-prep tr:nth-child(odd) td:nth-child(n+9):nth-child(even) {
     background-color: #ffffff; 
     text-align: center;  
+	border-left: 1px solid #979797 !important;
+	border-right: 1px solid #979797 !important;
 }
 
 .dt-master-prep tr:nth-child(odd) td:nth-child(n+9):nth-child(odd) {
     background-color: #f7f9f1;  
     text-align: center; 
+	border-left: 1px solid #979797 !important;
+	border-right: 1px solid #979797 !important;
 }
 
 
