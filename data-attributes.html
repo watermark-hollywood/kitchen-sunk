@@ -46,8 +46,8 @@
         <!-- BEGIN Navigation Bar-->
         <header id="topnav">
 
-			<!-- Top Bar and Navigation -->
-			<div class="topbar-main">
+            <!-- Top Bar and Navigation -->
+            <div class="topbar-main">
                 <div class="container">
                     <nav class="navbar navbar-default navbar-green navbar-fixed-top">
                       <div class="container">
@@ -157,20 +157,14 @@
         <div class="wrapper" style="margin-top:70px">
             <div class="container">
 
-				<!-- Page Content -->
-				
+                
                 <div class="row m-t-20">
                     <div class="col-sm-7">
-                        <h1 class="nunito px-30 w-700 dk-grey m-b-0">Pull Thaw</h1>
-                        <h2 class="nunito px-24 w-300 lt-grey">Casa Linda: 7701 - Tuesday, March 14</h2>
+                        <h1 class="nunito px-30 w-700 dk-grey m-b-0">Data Attributes</h1>
                     </div>
                     <div class="col-sm-5">
                     <div class="row title-buttons">
-                        <div class="col-xs-12 col-sm-3 col-lg-4 pr-10">
-                            <button type="button" class="btn btn-lg btn-green"><span class="large-icon"><i class="fa fa-print" aria-hidden="true"></i>
-</span>&nbsp;&nbsp;Print</button>
-                        </div>
-                        <div class="col-xs-12 col-sm-5 col-lg-4 px-10">
+                        <div class="col-xs-12 col-sm-5 col-sm-offset-3 col-lg-offset-4 col-lg-4 px-10">
                             <button type="button" class="btn btn-lg btn-green">Save</button>
                         </div>
                         <div class="col-xs-12 col-sm-4 col-lg-4 pl-10">
@@ -181,96 +175,88 @@
                 </div>
 
                 <div class="row m-t-40">
-                    <div class="col-sm-12">
-                        <div class="card-box table-responsive">
+                    <div class="col-md-6">
+                        <div class="panel">
+                            <div class="panel-body">
+                                <div class="row mb-40">
+                                    <div class="col-sm-6">
+                                        <label class="nunito px-12 w-500 dk-grey all-caps mb-8 mt-14" for="data-category">Category:</label>
+                                        <select class="form-control" id="data-category" name="data-category" required>
+                                          <option>Select Option</option>
+                                          <!-- Options -->
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <h3 class="px-12 w-500 all-caps">Existing Items</h3>
+                                        <table class="table table-striped dt-responsive dt-master-prep" id="datatable-master-prep">
+                                            <thead>
+                                                <tr>
+                                                    <th>Edit</th>
+                                                    <th>Item</th>
+                                                    <th>Category</th>
+                                                    <th>Delete</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><i class="fa fa-edit green"></i></td>
+                                                    <td><strong>1/9 deep</strong></td>
+                                                    <td>baking</td>
+                                                    <td><i class="fa fa-trash green"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><i class="fa fa-edit green"></i></td>
+                                                    <td><strong>1/6 deep</strong></td>
+                                                    <td>baking</td>
+                                                    <td><i class="fa fa-trash green"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><i class="fa fa-edit green"></i></td>
+                                                    <td><strong>1/3 deep</strong></td>
+                                                    <td>baking</td>
+                                                    <td><i class="fa fa-trash green"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><i class="fa fa-edit green"></i></td>
+                                                    <td><strong>1/9 shallow</strong></td>
+                                                    <td>baking</td>
+                                                    <td><i class="fa fa-trash green"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><i class="fa fa-edit green"></i></td>
+                                                    <td><strong>1/6 shallow</strong></td>
+                                                    <td>baking</td>
+                                                    <td><i class="fa fa-trash green"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><i class="fa fa-edit green"></i></td>
+                                                    <td><strong>1/3 shallow</strong></td>
+                                                    <td>baking</td>
+                                                    <td><i class="fa fa-trash green"></i></td>
+                                                </tr>
 
-                            
-
-                            
-                            <table id="on-hand-table" class="table table-striped dt-responsive dt-pull-thaw" cellspacing="0">
-                                <thead>
-                                    <tr>
-                                        <th>Done</th>
-                                        <th>Item</th>
-                                        <th>Shelf Life</th>
-                                        <th>Batch Size</th>
-                                        <th class="text-center header-green">Pull By</th>
-                                        <th class="hidden-xs hidden-sm hidden-md"></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><input type="checkbox" value="done"></td>
-                                        <td class="emphasis-column all-caps">MPC Kit</td>
-                                        <td>12 hour</td>
-                                        <td>9 portions</td>
-                                        <td><strong>2</strong> pack</td>
-                                        <td class="hidden-xs hidden-sm hidden-md"></td>
-                                    </tr>
-
-                                    <tr>
-                                        <td><input type="checkbox" value="done"></td>
-                                        <td class="emphasis-column all-caps">Car Sal Kit</td>
-                                        <td>18 hour</td>
-                                        <td>9 portions</td>
-                                        <td><strong>1</strong> each</td>
-                                        <td class="hidden-xs hidden-sm hidden-md"></td>
-                                    </tr>
-
-                                    <tr>
-                                        <td><input type="checkbox" value="done"></td>
-                                        <td class="emphasis-column all-caps">Bite Paty</td>
-                                        <td>20 hour</td>
-                                        <td>4 each</td>
-                                        <td><strong>2</strong> pack</td>
-                                        <td class="hidden-xs hidden-sm hidden-md"></td>
-                                    </tr>
-
-                                    <tr>
-                                        <td><input type="checkbox" value="done"></td>
-                                        <td class="emphasis-column all-caps">Burger Paty</td>
-                                        <td>12 hour</td>
-                                        <td>8 each</td>
-                                        <td><strong>2</strong> pack</td>
-                                        <td class="hidden-xs hidden-sm hidden-md"></td>
-                                    </tr>
-
-                                    <tr>
-                                        <td><input type="checkbox" value="done"></td>
-                                        <td class="emphasis-column all-caps">LC House Salad</td>
-                                        <td>48 hour</td>
-                                        <td>1 each</td>
-                                        <td><strong>2</strong> pack</td>
-                                        <td class="hidden-xs hidden-sm hidden-md"></td>
-                                    </tr>
-
-                                    <tr>
-                                        <td><input type="checkbox" value="done"></td>
-                                        <td class="emphasis-column all-caps">Avo Dice</td>
-                                        <td>3 hour</td>
-                                        <td>1 each</td>
-                                        <td><strong>5</strong> pack</td>
-                                        <td class="hidden-xs hidden-sm hidden-md"></td>
-                                    </tr>
-
-                                    <tr>
-                                        <td><input type="checkbox" value="done"></td>
-                                        <td class="emphasis-column all-caps">Avo Sliced</td>
-                                        <td>6 hour</td>
-                                        <td>1 each</td>
-                                        <td><strong>1</strong> bag</td>
-                                        <td class="hidden-xs hidden-sm hidden-md"></td>
-                                    </tr>
-
-                                </tbody>
-                            </table>
+                                            </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="row mt-20">
+                                <div class="col-sm-6">
+                                    <label class="nunito px-12 w-500 dk-grey all-caps mb-8 mt-14" for="data-category">Add New item:</label>
+                                    <input class="form-control" type="text" id="data-new-item" name="data-new-item" placeholder="Input value" required>
+                                </div>
+                            </div>
+                            <div class="row my-20">
+                                <div class="col-sm-6 col-md-4">
+                                    <button type="button" class="btn btn-green">+ Add Value</button>
+                                </div>
+                            </div>
+                            <!-- end: panel body -->
                         </div>
-                    </div><!-- end col -->
-                </div>
-                <!-- end row -->
-
-
-
+                    </div> <!-- end panel -->
+                </div> <!-- end col-->
+            </div>
 
 				<!-- Footer -->
 				                <!-- Footer -->
@@ -278,7 +264,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-xs-6">
-                            	Copyright &copy; 2017 Brinker International. All rights reserved. 
+                            	Copyright &copy; 2017 Brinker International. All rights reserved.
                             </div>
                             <div class="col-xs-6">
                                 <ul class="pull-right list-inline m-b-0">
@@ -303,7 +289,7 @@
 
 
 			<!-- Right Sidebar -->
-			
+
             <!-- Right Sidebar -->
             <div class="side-bar right-bar">
                 <a href="javascript:void(0);" class="right-bar-toggle">
@@ -390,8 +376,7 @@
         <script src="assets/js/jquery.blockUI.js"></script>
         <script src="assets/js/waves.js"></script>
         <script src="assets/js/wow.min.js"></script>
-        <!-- This appears to be html, not js
-        <script src="assets/js/jquery.nicescroll.js"></script> -->
+        <script src="assets/js/jquery.nicescroll.js"></script>
         <script src="assets/js/jquery.scrollTo.min.js"></script>
 
         <!-- Datatables-->
@@ -399,8 +384,7 @@
         <script src="assets/plugins/datatables/dataTables.bootstrap.js"></script>
         <script src="assets/plugins/datatables/dataTables.buttons.min.js"></script>
         <script src="assets/plugins/datatables/buttons.bootstrap.min.js"></script>
-        <!-- this is throwin an error saying a module is missing
-        <script src="assets/plugins/datatables/jszip.min.js"></script> -->
+        <script src="assets/plugins/datatables/jszip.min.js"></script>
         <script src="assets/plugins/datatables/pdfmake.min.js"></script>
         <script src="assets/plugins/datatables/vfs_fonts.js"></script>
         <script src="assets/plugins/datatables/buttons.html5.min.js"></script>
@@ -412,27 +396,42 @@
         <script src="assets/plugins/datatables/dataTables.scroller.min.js"></script>
         <script src="assets/plugins/datatables/dataTables.select.min.js"></script>
 
-        <!-- Datatable init js -->
-        <script src="assets/pages/datatables.init.js"></script>
 
         <!-- App js -->
         <script src="assets/js/jquery.core.js"></script>
         <script src="assets/js/jquery.app.js"></script>
 
-
         <script type="text/javascript">
-            $(document).ready(function() {
-                $('#on-hand-table').dataTable({
-                    "autoWidth": false,
-                    "buttons": [],
-                    "order": [[ 1, "asc" ]],
-                    "columnDefs": [
-                        {"orderable": false, "targets": [0, 5]},
-                        {"width": "40%", "targets": 5}
-                    ]
+            var handleDataTableButtons = function () {
+                "use strict";
+                var oTable = $("#datatable-master-prep");
+
+                0 !== $("#datatable-master-prep").length && oTable.DataTable({
+                    searching: false,
+                    paging: false,
+                    bInfo: false,
+                    select: false,
+                    buttons: [],
+                    columnDefs: [{"orderable": false, "targets": [0,2,3]}],
+                    order: [[ 1, "asc" ]],
+                    responsive: !0
                 });
-            });
+                oTable = oTable.dataTable().api();
+                if($('#datatable-printlabels_filter').length > 0){
+                    $('#datatable-printlabels_filter').on('keyup', function(e){
+                        oTable.search( e.key ).draw();
+                    });
+                }
+            }, TableManageButtons = function () {
+                "use strict";
+                return {
+                    init: function () {
+                        handleDataTableButtons()
+                    }
+                }
+            }();
             TableManageButtons.init();
+
 
         </script>
 
