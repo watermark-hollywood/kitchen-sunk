@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:300,400,500,700|Roboto:300,400,700');
 
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Nunito', sans-serif;
 	font-size: 14px;
 }
 
@@ -22,7 +22,6 @@ a {
 
 a:hover {
 	color: #5D9732;
-	opacity: .6;
 }
 
 hr {
@@ -157,6 +156,14 @@ hr {
 	font-weight: 700;
 }
 
+.ls-1 {
+	letter-spacing: 1px;
+}
+
+.ls-2 {
+	letter-spacing: 2px;
+}
+
 .print-sheet-link {
 	text-decoration: none;
 }
@@ -173,6 +180,26 @@ hr {
 	margin-bottom: 10px;
 	width: 100%;
 	box-sizing: border-box;
+}
+
+.navbar-green {
+	background-color: #5D9732;
+}
+
+.navbar-toggle {
+	color: #fff;
+}
+
+.dropdown-menu > li > a {
+	color: #5D9732;
+}
+
+.navbar-collapse {
+	background-color: #5D9732;
+	border-top: none;
+	position: absolute;
+	left: 0px;
+	top: 49px;
 }
 
 .btn-green {
@@ -310,6 +337,14 @@ hr {
 
 .mb-20, .my-20 {
 	margin-bottom: 20px;
+}
+
+.ml-15, .mx-15 {
+	margin-left: 15px;
+}
+
+.mr-15, .mx-15 {
+	margin-right: 15px;
 }
 
 .pl-0 {
@@ -454,7 +489,6 @@ tr td.emphasis-column {
 	}
 }
 
-
 /**
  *  The following is not really needed in this case
  *  Only to demonstrate the usage of @media for large screens
@@ -466,5 +500,57 @@ tr td.emphasis-column {
     width: 14.285714285714285714285714285714%;
     *width: 14.285714285714285714285714285714%;
   }
+}
+
+/* Pull Thaw Weekly TH Styles */
+.header-dk {
+	background-color: #C4D79B;
+	border: 1px solid #979797 !important;
+	border-top: 1px solid #979797 !important;
+	border-right: 1px solid #979797 !important;
+	border-bottom: 1px solid #979797 !important;
+}
+.header-lt {
+	background-color: rgba(196,215,155,0.13);
+	border: 1px solid #979797 !important;
+	border-top: 1px solid #979797 !important;
+	border-right: 1px solid #979797 !important;
+	border-bottom: 1px solid #979797 !important;
+}
+
+.dt-weekly tr:nth-child(even) td:nth-child(n+5):nth-child(even) {
+    background-color: #f7f9f2;   
+}
+
+.dt-weekly tr:nth-child(even) td:nth-child(n+5):nth-child(odd) {
+    background-color: #f0f3e5;   
+}
+
+.dt-weekly tr:nth-child(odd) td:nth-child(n+5):nth-child(even) {
+    background-color: #ffffff;   
+}
+
+.dt-weekly tr:nth-child(odd) td:nth-child(n+5):nth-child(odd) {
+    background-color: #f7f9f1;   
+}
+
+.dt-master-prep tr:nth-child(even) td:nth-child(n+9):nth-child(even) {
+    background-color: #f7f9f2; 
+    text-align: center;  
+}
+
+.dt-master-prep tr:nth-child(even) td:nth-child(n+9):nth-child(odd) {
+    background-color: #f0f3e5;   
+    text-align: center;
+}
+
+.dt-master-prep tr:nth-child(odd) td:nth-child(n+9):nth-child(even) {
+    background-color: #ffffff; 
+    text-align: center;  
+}
+
+.dt-master-prep tr:nth-child(odd) td:nth-child(n+9):nth-child(odd) {
+    background-color: #f7f9f1;  
+    text-align: center; 
 }
 
