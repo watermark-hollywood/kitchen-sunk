@@ -359,6 +359,14 @@ hr {
 	margin-bottom: 30px;
 }
 
+.mt-34, .my-34 {
+	margin-top:34px;
+}
+
+.mb-34, .my-34 {
+	margin-bottom: 34px;
+}
+
 .mt-40, .my-40 {
 	margin-top:40px;
 }
