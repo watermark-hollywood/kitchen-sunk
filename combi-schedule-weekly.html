@@ -211,7 +211,7 @@
                     <div class="col-xs-12">
                         <div class="panel">
                             <div class="panel-body">
-                                <table class="table table-striped dt-responsive dt-combi-weekly" id="datatable-pullthaw">
+                                <table class="table table-striped dt-responsive dt-combi-weekly" id="combi-weekly-table">
                                     <thead>
                                         <tr>
                                             <th>Item</th>
@@ -631,18 +631,22 @@
         <script src="assets/js/jquery.core.js"></script>
         <script src="assets/js/jquery.app.js"></script>
 
+
         <script type="text/javascript">
             var handleDataTableButtons = function () {
                 "use strict";
-                var oTable = $("#datatable-pullthaw");
+                var oTable = $("#combi-weekly-table");
 
-                0 !== $("#datatable-pullthaw").length && oTable.DataTable({
+                0 !== $("#combi-weekly-table").length && oTable.DataTable({
+                    autoWidth: false,
                     searching: true,
-                    dom: '<"search-filter"f> Brtip',
-                    paging: false,
-                    bInfo: false,
+                    dom: 'Bfrtip',
+                    pageLength: "50",
                     select: false,
-                    buttons: [],
+                    buttons: [
+                        {extend: "copy",    className: "btn-primary btn-trans waves-effect waves-green w-md m-b-5"}, 
+                        {extend: "csv",     className: "btn-primary btn-trans waves-effect waves-green w-md m-b-5"},  
+                        {extend: "print",   className: "btn-primary btn-trans waves-effect waves-green w-md m-b-5"}],
                     responsive: !0
                 });
                 oTable = oTable.dataTable().api();
@@ -660,8 +664,6 @@
                 }
             }();
             TableManageButtons.init();
-
-
         </script>
 
     </body>

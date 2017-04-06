@@ -183,7 +183,7 @@
                             
 
                             
-                            <table id="on-hand-table" class="table table-striped dt-responsive dt-truck-schedule" cellspacing="0">
+                            <table id="truck-schedule-table" class="table table-striped dt-responsive dt-truck-schedule" cellspacing="0">
                                 <thead>
                                     <tr>
                                         <th>Item</th>
@@ -434,15 +434,6 @@
 
         <script type="text/javascript">
             $(document).ready(function() {
-                $('#on-hand-table').dataTable({
-                    "autoWidth": false,
-                    "buttons": [],
-                    "order": [[ 0, "asc" ]],
-                    "columnDefs": [
-                        {"orderable": false, "targets": [1, 2, 3, 4, 5, 6, 7]}
-                    ]
-                });
-
                 $(".btn-day-toggle").click(function(){
                     $(this).toggleClass("btn-white"); //Adds 'a', removes 'b'
                 });
@@ -452,8 +443,42 @@
                 $('#tuesday').click();
                 $('#wednesday').click();
             });
-            TableManageButtons.init();
 
+            var handleDataTableButtons = function () {
+                "use strict";
+                var oTable = $("#truck-schedule-table");
+
+                0 !== $("#truck-schedule-table").length && oTable.DataTable({
+                    autoWidth: false,
+                    searching: true,
+                    dom: 'Bfrtip',
+                    pageLength: "50",
+                    select: false,
+                    order: [0, "asc"],
+                    columnDefs: [
+                        {"orderable": false, "targets": [1, 2, 3, 4, 5, 6, 7]}
+                    ],
+                    buttons: [
+                        {extend: "copy",    className: "btn-primary btn-trans waves-effect waves-green w-md m-b-5"}, 
+                        {extend: "csv",     className: "btn-primary btn-trans waves-effect waves-green w-md m-b-5"},  
+                        {extend: "print",   className: "btn-primary btn-trans waves-effect waves-green w-md m-b-5"}],
+                    responsive: !0
+                });
+                oTable = oTable.dataTable().api();
+                if($('#datatable-printlabels_filter').length > 0){
+                    $('#datatable-printlabels_filter').on('keyup', function(e){
+                        oTable.search( e.key ).draw();
+                    });
+                }
+            }, TableManageButtons = function () {
+                "use strict";
+                return {
+                    init: function () {
+                        handleDataTableButtons()
+                    }
+                }
+            }();
+            TableManageButtons.init();
         </script>
 
     </body>
