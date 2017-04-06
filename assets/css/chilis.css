@@ -99,6 +99,9 @@ hr {
 	text-align: left;
 }
 
+.width-auto {
+	width: auto;
+}
 
 
 /* FONT STYLES */
@@ -504,8 +507,20 @@ hr {
 }
 
 /* DATATABLES STYLES */
-.dt-buttons {
-	display: none;
+
+
+.waves-effect.waves-green .waves-ripple {
+  background-color: rgba(93, 151, 50, 0.4);
+}
+
+.btn-trans.btn-primary {
+	border: 1px solid #cccccc !important;
+	background-color: #fff !important;
+	color: #5C5C5C !important;
+}
+
+.btn-trans.btn-primary:hover {
+	color: #5D9732 !important;
 }
 
 div.dataTables_filter {

@@ -651,10 +651,13 @@
 
                 0 !== $("#datatable-pullthaw").length && oTable.DataTable({
                     searching: true,
-                    dom: '<"search-filter"f> Brtip',
+                    dom: 'Bfrtip',
                     pageLength: "50",
                     select: false,
-                    buttons: [],
+                    buttons: [
+                        {extend: "copy",    className: "btn-primary btn-trans waves-effect waves-green w-md m-b-5"}, 
+                        {extend: "csv",     className: "btn-primary btn-trans waves-effect waves-green w-md m-b-5"},  
+                        {extend: "print",   className: "btn-primary btn-trans waves-effect waves-green w-md m-b-5"}],
                     responsive: !0
                 });
                 oTable = oTable.dataTable().api();
@@ -672,8 +675,6 @@
                 }
             }();
             TableManageButtons.init();
-
-
         </script>
 
     </body>

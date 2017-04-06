@@ -213,7 +213,7 @@
                 <div class="row m-t-40">
                     <div class="col-xs-12">
                         <div class="card-box table-responsive">
-                            <table id="on-hand-table" class="table table-striped dt-responsive" cellspacing="0">
+                            <table id="line-prep-table" class="table table-striped dt-responsive" cellspacing="0">
                                 <thead>
                                     <tr>
                                         <th>Done</th>
@@ -446,27 +446,47 @@
         <script src="assets/plugins/datatables/dataTables.scroller.min.js"></script>
         <script src="assets/plugins/datatables/dataTables.select.min.js"></script>
 
-        <!-- Datatable init js -->
-        <script src="assets/pages/datatables.init.js"></script>
-
         <!-- App js -->
         <script src="assets/js/jquery.core.js"></script>
         <script src="assets/js/jquery.app.js"></script>
 
         <script type="text/javascript">
-            $(document).ready(function() {
-                $('#on-hand-table').dataTable({
-                    "autoWidth": false,
-                    "buttons": [],
-                    "order": [[ 2, "asc" ]],
-                    "columnDefs": [
-                        {"orderable": false, "targets": [0, 6]},
-                        {"width": "40%", "targets": 6}
-                    ]
-                });
-            });
-            TableManageButtons.init();
+            var handleDataTableButtons = function () {
+                "use strict";
+                var oTable = $("#line-prep-table");
 
+                0 !== $("#line-prep-table").length && oTable.DataTable({
+                    autoWidth: false,
+                    searching: true,
+                    dom: 'Bfrtip',
+                    pageLength: "50",
+                    select: false,
+                    order: [2, "asc"],
+                    columnDefs: [
+                        {"orderable": false, "targets": [0,6]},
+                        {"width": "40%", "targets": [6]}
+                    ],
+                    buttons: [
+                        {extend: "copy",    className: "btn-primary btn-trans waves-effect waves-green w-md m-b-5"}, 
+                        {extend: "csv",     className: "btn-primary btn-trans waves-effect waves-green w-md m-b-5"},  
+                        {extend: "print",   className: "btn-primary btn-trans waves-effect waves-green w-md m-b-5"}],
+                    responsive: !0
+                });
+                oTable = oTable.dataTable().api();
+                if($('#datatable-printlabels_filter').length > 0){
+                    $('#datatable-printlabels_filter').on('keyup', function(e){
+                        oTable.search( e.key ).draw();
+                    });
+                }
+            }, TableManageButtons = function () {
+                "use strict";
+                return {
+                    init: function () {
+                        handleDataTableButtons()
+                    }
+                }
+            }();
+            TableManageButtons.init();
         </script>
 
     </body>

@@ -178,7 +178,7 @@
                     <div class="col-xs-12">
                         <div class="panel">
                             <div class="panel-body">
-                                <table class="table table-striped dt-responsive dt-master-prep" id="datatable-master-prep">
+                                <table class="table table-striped dt-responsive dt-master-prep" id="master-prep-table">
                                     <thead>
                                         <tr>
                                             <th>Item</th>
@@ -239,7 +239,7 @@
                                             <td><strong>0</strong> 0</td>
                                             <td>1/6 deep</td>
                                             <td>Prep 1</td>
-                                            <td></td>
+                                            <td>Yes</td>
                                             <td>7</td>
                                             <td>Yes</td>
                                             <td><input type="checkbox" value="Thursday" checked></td>
@@ -256,7 +256,7 @@
                                             <td><strong>0</strong> 0</td>
                                             <td>1 batch</td>
                                             <td>Portion</td>
-                                            <td></td>
+                                            <td>Yes</td>
                                             <td>7</td>
                                             <td>Yes</td>
                                             <td><input type="checkbox" value="Thursday" checked></td>
@@ -422,15 +422,21 @@
         <script type="text/javascript">
             var handleDataTableButtons = function () {
                 "use strict";
-                var oTable = $("#datatable-master-prep");
+                var oTable = $("#master-prep-table");
 
-                0 !== $("#datatable-master-prep").length && oTable.DataTable({
+                0 !== $("#master-prep-table").length && oTable.DataTable({
                     searching: true,
-                    dom: '<"search-filter"f> Brtip',
+                    dom: 'Bfrtip',
                     pageLength: "50",
                     select: false,
-                    buttons: [],
-                    columnDefs: [{"orderable": false, "targets": [8, 9, 10, 11, 12, 13, 14]}],
+                    columnDefs: [
+                        {"orderable": false, "targets": [8, 9, 10, 11, 12, 13, 14]},
+                        {"width": "40%", "targets": [5]}
+                    ],
+                    buttons: [
+                        {extend: "copy",    className: "btn-primary btn-trans waves-effect waves-green w-md m-b-5"}, 
+                        {extend: "csv",     className: "btn-primary btn-trans waves-effect waves-green w-md m-b-5"},  
+                        {extend: "print",   className: "btn-primary btn-trans waves-effect waves-green w-md m-b-5"}],
                     responsive: !0
                 });
                 oTable = oTable.dataTable().api();
@@ -448,8 +454,6 @@
                 }
             }();
             TableManageButtons.init();
-
-
         </script>
 
     </body>
