@@ -210,6 +210,8 @@
                                         <th>Manager</th>
                                         <th>D.O.</th>
                                         <th>V.P.O.</th>
+                                        <th>&nbsp;</th>
+                                        <th>&nbsp;</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -410,9 +412,29 @@
 
         <script type="text/javascript">
             $(document).ready(function() {
-                $('#datatable').dataTable();
+                $('#datatable-buttons').dataTable({ajax: {"url":"restaurant","dataSrc":""},
+                    "columns": [
+                        {"data": "displayName"},
+                        {"data": "address"},
+                        {"data": "manager"},
+                        {"data": "director"},
+                        {"data": "vicePresident"},
+                        {"data": "locationCode", "className":"hidden"},
+                        {"data": "restaurantId", "className":"hidden"},
+                    ],
+                    dom: "Bfrtip",
+                    pageLength: "50",
+                    buttons:    [
+                        {extend: "copy",    className: "btn-primary btn-trans waves-effect waves-primary w-md m-b-5"},
+                        {extend: "csv",     className: "btn-primary btn-trans waves-effect waves-primary w-md m-b-5"},
+                        {extend: "excel",   className: "btn-primary btn-trans waves-effect waves-primary w-md m-b-5"},
+                        {extend: "pdf",     className: "btn-primary btn-trans waves-effect waves-primary w-md m-b-5"},
+                        {extend: "print",   className: "btn-primary btn-trans waves-effect waves-primary w-md m-b-5"}
+                    ],
+                    responsive: !0
+                });
             } );
-            TableManageButtons.init();
+            //TableManageButtons.init();
 
         </script>
 

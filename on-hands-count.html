@@ -211,6 +211,8 @@
                                         <th>Shelf Life</th>
                                         <th>Batch Yield</th>
                                         <th>Qty</th>
+                                        <th class="hidden hidden-print">&nbsp;</th>
+                                        <th class="hidden hidden-print">&nbsp;</th>
                                         <th class="hidden-xs hidden-sm hidden-md"></th>
                                     </tr>
                                 </thead>
@@ -433,7 +435,35 @@
         <script src="assets/js/jquery.app.js"></script>
 
         <script type="text/javascript">
-            var handleDataTableButtons = function () {
+            $(document).ready(function() {
+                $('#datatable-printlabels').dataTable({ajax: {"url":"OnHandsCount","dataSrc":""},
+                    "columns": [
+                        {"data": "onHandCount", "createdCell" : function(cell, cellData, rowData, rowIndex, colIndex) {
+                            value = cellData;
+                            $(cell).html('<input type="text" class="form-control input-block" value="' + value + '"/>')
+                        }},
+                        {"data": "itemName"},
+                        {"data": "shelfLife"},
+                        {"data": "batchYield"},
+                        {"data": "countAs"},
+                        {"data": "businessDate", "className":"hidden hidden-print"},
+                        {"data": "restaurantId", "className":"hidden hidden-print"},
+                    ],
+                    "ordering": false,
+                    dom: "Bfrtip",
+                    pageLength: "50",
+                    buttons:    [
+                        {extend: "copy",    className: "btn-primary btn-trans waves-effect waves-primary w-md m-b-5"},
+                        {extend: "csv",     className: "btn-primary btn-trans waves-effect waves-primary w-md m-b-5"},
+                        {extend: "excel",   className: "btn-primary btn-trans waves-effect waves-primary w-md m-b-5"},
+                        {extend: "pdf",     className: "btn-primary btn-trans waves-effect waves-primary w-md m-b-5"},
+                        {extend: "print",   className: "btn-primary btn-trans waves-effect waves-primary w-md m-b-5"}
+                    ],
+                    responsive: !0
+                });
+            } );
+          
+          var handleDataTableButtons = function () {
                 "use strict";
                 var oTable = $("#on-hand-table");
 
@@ -469,6 +499,7 @@
                 }
             }();
             TableManageButtons.init();
+
         </script>
 
     </body>
