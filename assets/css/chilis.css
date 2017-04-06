@@ -66,6 +66,10 @@ hr {
 	color: #000;
 }
 
+.white {
+	color: #FFF;
+}
+
 .all-caps {
 	text-transform: uppercase;
 }
@@ -131,6 +135,11 @@ hr {
 .px-16 {
 	font-size: 16px;
 	line-height: 19px;
+}
+
+.px-14 {
+	font-size: 14px;
+	line-height: 16px;
 }
 
 .px-12 {
@@ -207,11 +216,47 @@ hr {
 }
 
 .navbar-collapse {
-	background-color: #5D9732;
+	padding-right: 5px;
+	padding-left: 5px;
+	overflow-x: visible;
+	-webkit-overflow-scrolling: touch;
+	border-top: 1px solid transparent;
+	-webkit-box-shadow: 0 2px 4px 0 rgba(204,204,204,0.8);
+	box-shadow: 0 2px 4px 0 rgba(204,204,204,0.8);
+}
+
+.hamburger-menu {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+.hamburger-menu li a {
+	padding: 6px 20px;
+	display: block;
+
+}
+
+.hamburger-menu li a:hover{
+	background-color: #dfdfdf;
+	color: #000;
+}
+
+.navbar-collapse {
+	background-color: #fff;
 	border-top: none;
 	position: absolute;
 	left: 0px;
 	top: 49px;
+	border-radius: 4px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+
+
+}
+
+.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+	max-height: 480px;
 }
 
 .btn-green {
@@ -395,6 +440,10 @@ hr {
 	padding-left: 10px;
 }
 
+.pl-20 {
+	padding-left: 20px;
+}
+
 .pr-0 {
 	padding-right: 0px;
 }
@@ -425,6 +474,14 @@ hr {
 
 .pb-10, .py-10 {
 	padding-bottom: 10px;
+}
+
+.pt-20, .py-20 {
+	padding-top: 20px;
+}
+
+.pb-20, .py-20 {
+	padding-bottom: 20px;
 }
 
 .pr-10 {
@@ -466,17 +523,17 @@ th {
 tr td {
 		color: #5C5C5C;	
 		font-family: "Nunito", sans-serif;	
-		font-size: 10px;	
+		font-size: 14px;	
 		font-weight: 300;	
-		line-height: 11px;
+		line-height: 16px;
 }
 
 tr td.emphasis-column {
 		color: #5D9732;	
 		font-family: "Nunito", sans-serif;	
-		font-size: 12px;	
-		font-weight: 700;	
-		line-height: 15px;
+		font-size: 15px;	
+		font-weight: 500;	
+		line-height: 16px;
 }
 /* END DATATABLES STYLES */
 
@@ -586,14 +643,14 @@ tr td.emphasis-column {
 	padding-right: 8px;
 }
 
-.dt-pull-thaw tr:nth-child(even) td:nth-child(n+5):nth-child(-n+5) {
+.dt-pull-thaw tr:nth-child(even) td:nth-child(n+6):nth-child(-n+6) {
     background-color: #f7f9f2;   
 	border-left: 1px solid #979797 !important;
 	border-right: 1px solid #979797 !important;
 	text-align: center;
 }
 
-.dt-pull-thaw tr:nth-child(odd) td:nth-child(n+5):nth-child(-n+5)  {
+.dt-pull-thaw tr:nth-child(odd) td:nth-child(n+6):nth-child(-n+6)  {
     background-color: #f0f3e5;   
 	border-left: 1px solid #979797 !important;
 	border-right: 1px solid #979797 !important;
@@ -659,6 +716,31 @@ tr td.emphasis-column {
 
 .dt-truck-schedule tr td:nth-child(n+2) {
     text-align: center;  
+	border-left: 1px solid #979797 !important;
+	border-right: 1px solid #979797 !important;
+}
+
+
+.dt-combi-weekly tr:nth-child(odd) td:nth-child(n+4):nth-child(odd) {
+    background-color: #f7f9f2;   
+	border-left: 1px solid #979797 !important;
+	border-right: 1px solid #979797 !important;
+}
+
+.dt-combi-weekly tr:nth-child(odd) td:nth-child(n+4):nth-child(even) {
+    background-color: #f0f3e5;   
+	border-left: 1px solid #979797 !important;
+	border-right: 1px solid #979797 !important;
+}
+
+.dt-combi-weekly tr:nth-child(even) td:nth-child(n+4):nth-child(odd) {
+    background-color: #ffffff;   
+	border-left: 1px solid #979797 !important;
+	border-right: 1px solid #979797 !important;
+}
+
+.dt-combi-weekly tr:nth-child(even) td:nth-child(n+4):nth-child(even) {
+    background-color: #f7f9f1;   
 	border-left: 1px solid #979797 !important;
 	border-right: 1px solid #979797 !important;
 }
