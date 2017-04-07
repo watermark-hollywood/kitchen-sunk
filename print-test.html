@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Brinker KitchenSYNC is the ultimate Culinary Management system used by Chilis Restaurants">
+        <meta name="author" content="Watermark Digital">
+
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <title>KitchenSYNC - Print Test</title>
+
+        <!-- DataTables -->
+        <link href="assets/plugins/datatables/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/plugins/datatables/buttons.bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/plugins/datatables/fixedHeader.bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/plugins/datatables/responsive.bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/plugins/datatables/scroller.bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/core.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/components.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/pages.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/menu2.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" /> 
+        <link href="assets/css/chilis.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/print.css" rel="stylesheet" type="text/css" media="print" />
+
+        <!-- HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="assets/js/modernizr.min.js"></script>
+
+    </head>
+
+
+    <body>
+
+
+        <div class="container-fluid print text-center">
+            <div class="row">
+                <div class="col-xs-6">
+                    <img src="assets/images/kitchensync-logo-green.png" />
+                </div>
+                <div class="col-xs-6 text-right">
+                    <div class="nunito px-18 w-700 dk-grey">Casa Linda: 7701</div>
+                    <div class="nunito px-16 w-300 dk-grey">246 Casa Linda Plaza Dallas, TX 75218</div>
+                    <div class="nunito px-14 w-700 dk-grey">Manager: Ned Newbie</div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- jQuery  -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/detect.js"></script>
+        <script src="assets/js/fastclick.js"></script>
+        <script src="assets/js/jquery.slimscroll.js"></script>
+        <script src="assets/js/jquery.blockUI.js"></script>
+        <script src="assets/js/waves.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <!-- This appears to be html, not js
+        <script src="assets/js/jquery.nicescroll.js"></script> -->
+        <script src="assets/js/jquery.scrollTo.min.js"></script>
+
+        <!-- Datatables-->
+        <script src="assets/plugins/datatables/jquery.dataTables.min.js"></script>
+        <script src="assets/plugins/datatables/dataTables.bootstrap.js"></script>
+        <script src="assets/plugins/datatables/dataTables.buttons.min.js"></script>
+        <script src="assets/plugins/datatables/buttons.bootstrap.min.js"></script>
+        <!-- this is throwin an error saying a module is missing
+        <script src="assets/plugins/datatables/jszip.min.js"></script> -->
+        <script src="assets/plugins/datatables/pdfmake.min.js"></script>
+        <script src="assets/plugins/datatables/vfs_fonts.js"></script>
+        <script src="assets/plugins/datatables/buttons.html5.min.js"></script>
+        <script src="assets/plugins/datatables/buttons.print.min.js"></script>
+        <script src="assets/plugins/datatables/dataTables.fixedHeader.min.js"></script>
+        <script src="assets/plugins/datatables/dataTables.keyTable.min.js"></script>
+        <script src="assets/plugins/datatables/dataTables.responsive.min.js"></script>
+        <script src="assets/plugins/datatables/responsive.bootstrap.min.js"></script>
+        <script src="assets/plugins/datatables/dataTables.scroller.min.js"></script>
+        <script src="assets/plugins/datatables/dataTables.select.min.js"></script>
+
+        <!-- Datatable init js -->
+        <script src="assets/pages/datatables.init.js"></script>
+
+        <!-- App js -->
+        <script src="assets/js/jquery.core.js"></script>
+        <script src="assets/js/jquery.app.js"></script>
+
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $(".btn-day-toggle").click(function(){
+                    $(this).toggleClass("btn-white"); //Adds 'a', removes 'b'
+                });
+                $('#friday').click();
+                $('#saturday').click();
+                $('#monday').click();
+                $('#tuesday').click();
+                $('#wednesday').click();
+            });
+
+            var handleDataTableButtons = function () {
+                "use strict";
+                var oTable = $("#truck-schedule-table");
+
+                0 !== $("#truck-schedule-table").length && oTable.DataTable({
+                    autoWidth: false,
+                    searching: true,
+                    dom: 'Bfrtip',
+                    pageLength: "50",
+                    select: false,
+                    order: [0, "asc"],
+                    columnDefs: [
+                        {"orderable": false, "targets": [1, 2, 3, 4, 5, 6, 7]}
+                    ],
+                    buttons: [
+                        {extend: "copy",    className: "btn-primary btn-trans waves-effect waves-green w-md m-b-5"}, 
+                        {extend: "csv",     className: "btn-primary btn-trans waves-effect waves-green w-md m-b-5"},  
+                        {extend: "pdf",     className: "btn-primary btn-trans waves-effect waves-green w-md m-b-5"},  
+                        {extend: "print",   className: "btn-primary btn-trans waves-effect waves-green w-md m-b-5"}],
+                    responsive: !0
+                });
+            }, TableManageButtons = function () {
+                "use strict";
+                return {
+                    init: function () {
+                        handleDataTableButtons()
+                    }
+                }
+            }();
+            TableManageButtons.init();
+        </script>
+
+    </body>
+
+</html>

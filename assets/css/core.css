@@ -1196,33 +1196,3 @@ pre {
 .waves-effect.waves-inverse .waves-ripple {
   background-color: rgba(59, 62, 71, 0.4);
 }
-
-/*==================================
-  Print css
-  ==================================*/
-@media print {
-  .page-title-box,
-  .topbar-left,
-  .hidden-print,
-  .breadcrumb,
-  .footer,
-  #topnav,
-  .btn-custom,
-  .no-print {
-    display: none;
-    margin: 0px;
-    padding: 0px;
-  }
-  .left,
-  .right-bar {
-    display: none;
-  }
-  .wrapper {
-    margin-top: 0px !important;
-    padding-top: 0px;
-  }
-  .content-page {
-    margin-left: 0px;
-    margin-top: 0px;
-  }
-}

@@ -28,6 +28,7 @@
         <link href="assets/css/menu.css" rel="stylesheet" type="text/css" />
         <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
         <link href="assets/css/chilis.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/print.css" rel="stylesheet" type="text/css" media="print" />
 
         <!-- HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -185,14 +186,31 @@
 
 
         <div class="wrapper">
+                
+                <div class="container-fluid print text-center">
+                    <div class="row">
+                        <div class="col-xs-6 text-left pull-left">
+                            <img src="assets/images/kitchensync-logo-green.png" width="240px"/>
+                        </div>
+                        <div class="col-xs-6 text-right">
+                            <div class="nunito px-18 w-700 dk-grey">Casa Linda: 7701</div>
+                            <div class="nunito px-16 w-300 dk-grey">246 Casa Linda Plaza Dallas, TX 75218</div>
+                            <div class="nunito px-14 w-700 dk-grey">Manager: Ned Newbie</div>
+                        </div>
+                    </div>
+                </div>
             <div class="container">
 
-				<!-- Page Content -->
-				
+                <!-- Page Content -->
                 <div class="row m-t-20">
-                    <div class="col-sm-12">
-                        <h1 class="nunito px-30 w-700 dk-grey m-b-0">On-Hands Count</h1>
-                        <h2 class="nunito px-24 w-300 lt-grey">Tuesday, March 14</h2>
+                    <div class="col-sm-6">
+                        <h1 class="nunito px-30 w-700 dk-grey m-b-0">On Hand Count</h1>
+                        <h2 class="nunito px-24 w-300 lt-grey">Casa Linda: 7701 - Tuesday, March 14</h2>
+                    </div>
+                    <div class="col-sm-6 screen">
+                        <button type="button" class="btn btn-lg btn-green" id="save-button">Save</button>
+                        <button type="button" class="btn btn-lg btn-green" id="print-button"><span class="large-icon"><i class="fa fa-print" aria-hidden="true"></i>
+</span>&nbsp;&nbsp;Print</button>
                     </div>
                 </div>
 
@@ -435,6 +453,16 @@
         <script src="assets/js/jquery.app.js"></script>
 
         <script type="text/javascript">
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+            $('#print-button').click(function(){
+                window.print();
+            });
+            
+            var handleDataTableButtons = function () {
+=======
+>>>>>>> Stashed changes
             $(document).ready(function() {
                 $('#datatable-printlabels').dataTable({ajax: {"url":"OnHandsCount","dataSrc":""},
                     "columns": [
@@ -464,6 +492,10 @@
             } );
           
           var handleDataTableButtons = function () {
+<<<<<<< Updated upstream
+=======
+>>>>>>> origin/Ryan
+>>>>>>> Stashed changes
                 "use strict";
                 var oTable = $("#on-hand-table");
 
@@ -478,10 +510,7 @@
                         {"orderable": false, "targets": [0,5]},
                         {"width": "40%", "targets": [5]}
                     ],
-                    buttons: [
-                        {extend: "copy",    className: "btn-primary btn-trans waves-effect waves-green w-md m-b-5"}, 
-                        {extend: "csv",     className: "btn-primary btn-trans waves-effect waves-green w-md m-b-5"},  
-                        {extend: "print",   className: "btn-primary btn-trans waves-effect waves-green w-md m-b-5"}],
+                    buttons: [],
                     responsive: !0
                 });
                 oTable = oTable.dataTable().api();

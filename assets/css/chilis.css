@@ -760,3 +760,23 @@ tr td.emphasis-column {
 	border-right: 1px solid #979797 !important;
 }
 
+.print {
+	display: none;
+}
+
+#print-button, #save-button {
+	float: right;
+	max-width: 150px;
+	margin-left: 15px;
+}
+
+@media (max-width: 767px){
+	#print-button, #save-button {
+		float: none;
+		max-width: 100%;
+		width: 100%;
+		margin-top: 15px;
+		margin-left: 0px;
+	}
+}
+
