@@ -411,6 +411,38 @@
         <script src="assets/js/jquery.app.js"></script>
 
         <script type="text/javascript">
+<<<<<<< HEAD
+            var handleDataTableButtons = function () {
+                "use strict";
+                var oTable = $("#datatable-buttons");
+
+                0 !== $("#datatable-buttons").length && oTable.DataTable({
+                    autoWidth: false,
+                    searching: true,
+                    dom: 'Bfrtip',
+                    pageLength: "50",
+                    select: false,
+                    order: [1, "asc"],
+                    columnDefs: [],
+                    buttons: [],
+                    responsive: !0
+                });
+                oTable = oTable.dataTable().api();
+                if($('#datatable-printlabels_filter').length > 0){
+                    $('#datatable-printlabels_filter').on('keyup', function(e){
+                        oTable.search( e.key ).draw();
+                    });
+                }
+            }, TableManageButtons = function () {
+                "use strict";
+                return {
+                    init: function () {
+                        handleDataTableButtons()
+                    }
+                }
+            }();
+            TableManageButtons.init();
+=======
             $(document).ready(function() {
                 $('#datatable-buttons').dataTable({ajax: {"url":"restaurant","dataSrc":""},
                     "columns": [
@@ -435,6 +467,10 @@
                 });
             } );
             //TableManageButtons.init();
+<<<<<<< Updated upstream
+=======
+>>>>>>> origin/Ryan
+>>>>>>> Stashed changes
 
         </script>
 

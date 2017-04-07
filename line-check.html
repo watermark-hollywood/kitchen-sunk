@@ -28,6 +28,7 @@
         <link href="assets/css/menu.css" rel="stylesheet" type="text/css" />
         <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
         <link href="assets/css/chilis.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/print.css" rel="stylesheet" type="text/css" media="print" />
 
         <!-- HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -185,28 +186,31 @@
 
 
         <div class="wrapper">
+                
+                <div class="container-fluid print text-center">
+                    <div class="row">
+                        <div class="col-xs-6 text-left pull-left">
+                            <img src="assets/images/kitchensync-logo-green.png" width="240px"/>
+                        </div>
+                        <div class="col-xs-6 text-right">
+                            <div class="nunito px-18 w-700 dk-grey">Casa Linda: 7701</div>
+                            <div class="nunito px-16 w-300 dk-grey">246 Casa Linda Plaza Dallas, TX 75218</div>
+                            <div class="nunito px-14 w-700 dk-grey">Manager: Ned Newbie</div>
+                        </div>
+                    </div>
+                </div>
             <div class="container">
 
 				<!-- Page Content -->
-				
                 <div class="row m-t-20">
-                    <div class="col-sm-7">
+                    <div class="col-sm-6">
                         <h1 class="nunito px-30 w-700 dk-grey m-b-0">Line Check</h1>
-                        <h2 class="nunito px-24 w-300 lt-grey">Tuesday, March 14</h2>
+                        <h2 class="nunito px-24 w-300 lt-grey">Casa Linda: 7701 - Tuesday, March 14</h2>
                     </div>
-                    <div class="col-sm-5">
-                    <div class="row title-buttons">
-                        <div class="col-xs-12 col-sm-3 col-lg-4 pr-10">
-                            <button type="button" class="btn btn-lg btn-green"><span class="large-icon"><i class="fa fa-print" aria-hidden="true"></i>
+                    <div class="col-sm-6 screen">
+                        <button type="button" class="btn btn-lg btn-green" id="save-button">Save</button>
+                        <button type="button" class="btn btn-lg btn-green" id="print-button"><span class="large-icon"><i class="fa fa-print" aria-hidden="true"></i>
 </span>&nbsp;&nbsp;Print</button>
-                        </div>
-                        <div class="col-xs-12 col-sm-5 col-lg-4 px-10">
-                            <button type="button" class="btn btn-lg btn-green">Save</button>
-                        </div>
-                        <div class="col-xs-12 col-sm-4 col-lg-4 pl-10">
-                            <button type="button" class="btn btn-lg btn-white">Cancel</button>
-                        </div>
-                    </div>
                     </div>
                 </div>
 
@@ -455,6 +459,9 @@
         <script src="assets/js/jquery.app.js"></script>
 
         <script type="text/javascript">
+            $('#print-button').click(function(){
+                window.print();
+            });
             var handleDataTableButtons = function () {
                 "use strict";
                 var oTable = $("#line-check-table");
@@ -470,10 +477,7 @@
                         {"orderable": false, "targets": [0,3,5]},
                         {"width": "40%", "targets": [6]}
                     ],
-                    buttons: [
-                        {extend: "copy",    className: "btn-primary btn-trans waves-effect waves-green w-md m-b-5"}, 
-                        {extend: "csv",     className: "btn-primary btn-trans waves-effect waves-green w-md m-b-5"},  
-                        {extend: "print",   className: "btn-primary btn-trans waves-effect waves-green w-md m-b-5"}],
+                    buttons: [],
                     responsive: !0
                 });
                 oTable = oTable.dataTable().api();

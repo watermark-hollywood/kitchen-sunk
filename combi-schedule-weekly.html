@@ -28,6 +28,7 @@
 <!--        <link href="assets/css/vendor.css" rel="stylesheet" type="text/css" /> -->
         <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
         <link href="assets/css/chilis.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/print.css" rel="stylesheet" type="text/css" media="print" />
 
 
         <!-- HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -191,19 +192,12 @@
 
                 
                 <div class="row m-t-20">
-                    <div class="col-sm-7">
+                    <div class="col-sm-6">
                         <h1 class="nunito px-30 w-700 dk-grey m-b-0">Combi Oven Schedule</h1>
                         <h2 class="nunito px-24 w-300 lt-grey">Master Sheet</h2>
                     </div>
-                    <div class="col-sm-5">
-                    <div class="row title-buttons">
-                        <div class="col-xs-12 col-sm-5 col-sm-offset-3 col-lg-4 col-lg-offset-4 px-10">
-                            <button type="button" class="btn btn-lg btn-green">Save</button>
-                        </div>
-                        <div class="col-xs-12 col-sm-4 col-lg-4 pl-10">
-                            <button type="button" class="btn btn-lg btn-white">Cancel</button>
-                        </div>
-                    </div>
+                    <div class="col-sm-6 screen">
+                        <button type="button" class="btn btn-lg btn-green" id="save-button">Save</button>
                     </div>
                 </div>
 
@@ -645,8 +639,7 @@
                     select: false,
                     buttons: [
                         {extend: "copy",    className: "btn-primary btn-trans waves-effect waves-green w-md m-b-5"}, 
-                        {extend: "csv",     className: "btn-primary btn-trans waves-effect waves-green w-md m-b-5"},  
-                        {extend: "print",   className: "btn-primary btn-trans waves-effect waves-green w-md m-b-5"}],
+                        {extend: "csv",     className: "btn-primary btn-trans waves-effect waves-green w-md m-b-5"}],
                     responsive: !0
                 });
                 oTable = oTable.dataTable().api();
